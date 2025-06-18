@@ -18,7 +18,7 @@ export function Projects() {
   return (
     <section id="projects" className="w-full bg-[#1E1E1E] text-white py-12 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl py-4 font-bold mb-10 text-center">
+        <h2 className="text-4xl md:text-5xl py-8 font-bold mb-10 text-center">
           <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">My</span>{' '}
           <span className="relative text-white inline-block">
             Projects
