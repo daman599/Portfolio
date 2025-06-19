@@ -11,7 +11,7 @@ export function Projects() {
       title: "Portfolio Website",
       description: "My personal developer portfolio, showcasing projects, skills, and contact options.",
       image: "/portfolio.png",
-      liveLink: "https://yourportfolio.com",
+      liveLink: "http://localhost:5173",
       codeLink: "https://github.com/daman599/portfolio"
     }
   ]
@@ -21,7 +21,7 @@ export function Projects() {
         <h2 className="text-4xl md:text-5xl py-8 font-bold mb-10 text-center bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
          My Projects 
         </h2>
-
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-[#2A2A2A] rounded-2xl shadow-lg p-5 hover:scale-[1.02] transition-all duration-300">
