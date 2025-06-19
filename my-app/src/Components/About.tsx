@@ -10,7 +10,7 @@ export function About() {
                 <iframe
                     src="https://www.chatbase.co/chatbot-iframe/b7psqbGcujX4eE_DnqIUK"
                     width="100%"
-                    style={{ height: "100%", minHeight: "700px" }}
+                    style={{ height: "30%", minHeight: "700px" }}
                     frameBorder="0"
                 ></iframe>
             </div>

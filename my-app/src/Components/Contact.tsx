@@ -7,7 +7,7 @@ export function ContactMe() {
       className="w-full bg-[#1E1E1E] text-white py-16 px-6 md:px-20"
     >
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-slate-400 to-gray-500 drop-shadow-[0_0_15px_rgba(147,197,253,0.25)]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
           Connect With Me
         </h2>
 

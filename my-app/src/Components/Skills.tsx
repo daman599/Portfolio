@@ -14,7 +14,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="w-full bg-[#1E1E1E] py-12 px-6 md:px-20 text-white">
-      <h2 className="text-4xl md:text-5xl font-bold mb-10 text-center text-white">Tech Stack</h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-10 text-center bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">Tech Stack</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
         {skills.map((skill, idx) => (
           <div
