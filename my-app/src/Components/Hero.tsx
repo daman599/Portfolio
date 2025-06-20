@@ -25,9 +25,15 @@ export function Hero() {
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
+          <a
+            href="https://docs.google.com/document/d/1Gb1EFxGVPiNGXhGGXQ2lj5Sqed9TM26DDi7Q3WW416s/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <button className="border cursor-pointer border-blue-500 text-blue-500 px-6 py-2.5 rounded-full hover:bg-blue-500 hover:text-black transition font-semibold">
             Download CV
           </button>
+          </a>
           <HoverBorderGradient>
           <button className=" px-6 py-2.5 rounded-full font-semibold">
             Open to work
