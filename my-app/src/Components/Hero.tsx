@@ -26,7 +26,7 @@ export function Hero() {
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <a
-            href="https://docs.google.com/document/d/1Gb1EFxGVPiNGXhGGXQ2lj5Sqed9TM26DDi7Q3WW416s/view"
+            href="https://drive.google.com/file/d/11rH4IMGuGgS2_J3OrPWznRo1-6aVCJY-/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
