@@ -22,13 +22,13 @@ export function ContactMe() {
   return (
     <section
       id="contact"
-      className="w-full bg-[#1E1E1E] text-white py-16 px-6 md:px-20"
+      className="w-full bg-primary   px-6 py-12 md:py-20"
     >
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-500">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-tertiary">
           Contact Me
         </h2>
-        <p className="text-gray-400 mb-10 text-lg">
+        <p className="text-secondary mb-10 text-lg">
           I'm always open to collaborations, opportunities, or just a chat!
         </p>
 
@@ -39,7 +39,7 @@ export function ContactMe() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-4 rounded-full bg-[#2A2A2A]/70 backdrop-blur border border-white/10 transition-transform duration-300 hover:scale-110 shadow-sm ${link.color}`}
+              className={`p-4 rounded-full bg-secondary backdrop-blur border border-secondary transition-transform duration-300 hover:scale-110 hover:bg-primary  shadow-sm ${link.color}`}
             >
               {link.icon}
             </a>
