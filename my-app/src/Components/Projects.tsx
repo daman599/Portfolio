@@ -1,6 +1,14 @@
 export function Projects() {
   const projects = [
     {
+      title: "ResumeMatch AI",
+      description:
+        "AI-powered resume analyzer that intelligently matches your resume with the most relevant and up-to-date job postings based on your skills and experience.",
+      image: "/resume-match-ai.png",
+      liveLink: "https://resume-match-ai-three.vercel.app",
+      codeLink: "https://github.com/daman599/Resume-match-ai",
+    },
+    {
       title: "Funflix",
       description:
         "A movie platform to find where films are streaming. Built with React, MongoDB, and TMDB API.",
