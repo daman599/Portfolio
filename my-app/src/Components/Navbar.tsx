@@ -31,6 +31,12 @@ export function Navbar() {
               <a href="#contact" className="hover:text-tertiary transition">
                 Contact
               </a>
+              <a href="https://github.com/daman599/Portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-tertiary transition">
+                View Code
+              </a>
             </div>
 
             <div className="md:hidden">
@@ -62,10 +68,10 @@ export function Navbar() {
           <a href="#contact" className="hover:text-tertiary transition">
             Contact
           </a>
-           <a href="https://github.com/daman599/Portfolio" 
-           target="_blank"
-           rel="noopener noreferrer"
-           className="hover:text-tertiary transition">
+          <a href="https://github.com/daman599/Portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-tertiary transition">
             View Code
           </a>
         </div>
