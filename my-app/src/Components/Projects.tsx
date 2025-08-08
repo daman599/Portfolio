@@ -16,14 +16,6 @@ export function Projects() {
       liveLink: "https://funflix-frontend.onrender.com",
       codeLink: "https://github.com/daman599/Funflix",
     },
-    {
-      title: "Portfolio Website",
-      description:
-        "My personal developer portfolio, showcasing projects, skills, and contact options.",
-      image: "/portfolio.png",
-      liveLink: "https://daman-eight.vercel.app/",
-      codeLink: "https://github.com/daman599/portfolio",
-    },
   ];
 
   return (
