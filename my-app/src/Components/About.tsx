@@ -3,23 +3,24 @@ import { TypewriterEffect } from "./ui/typewriter-effect"
 
 export function About() {
     return <>
-        <section id="about" className="w-full bg-[#1E1E1E] text-white py-20 px-6 md:px-20">
+        <section id="about" className="w-full bg-primary text-secondary py-12 md:py-20">
+            <div className="container md:max-w-[1440px] m-auto px-6">
             <div className="max-w-5xl mx-auto text-center">
                 <TypewriterEffect
                     words={[
-                        { text: "Know", className: "text-gray-400" },
-                        { text: "more", className: "text-gray-400" },
-                        { text: "about", className: "text-gray-400" },
-                        { text: "me", className: "text-gray-400" },
-                        { text: "from", className: "text-gray-400" },
-                        { text: "this", className: "text-gray-400" },
-                        { text: "Chatbot.", className: "text-blue-500" },
+                        { text: "Know", className: "text-secondary" },
+                        { text: "more", className: "text-secondary" },
+                        { text: "about", className: "text-secondary" },
+                        { text: "me", className: "text-secondary" },
+                        { text: "from", className: "text-secondary" },
+                        { text: "this", className: "text-secondary" },
+                        { text: "Chatbot.", className: "text-tertiary" },
                     ]}
-                    className="text-4xl md:text-5xl py-4 font-bold mb-10 text-center"
+                    className="text-4xl md:text-5xl font-bold mb-10 text-center"
                 />
             </div>
             <Button borderRadius="1.5rem" duration={5000}>
-                <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-700">
+                <div className="iframe-chatbot rounded-2xl overflow-hidden shadow-lg border border-tertiary">
                     <iframe
                         src="https://www.chatbase.co/chatbot-iframe/b7psqbGcujX4eE_DnqIUK"
                         width="100%"
@@ -28,6 +29,7 @@ export function About() {
                     ></iframe>
                 </div>
             </Button>
+            </div>
         </section>
     </>
 }

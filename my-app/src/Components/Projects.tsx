@@ -21,7 +21,7 @@ export function Projects() {
       description:
         "My personal developer portfolio, showcasing projects, skills, and contact options.",
       image: "/portfolio.png",
-      liveLink: "http://localhost:5173",
+      liveLink: "https://daman-eight.vercel.app/",
       codeLink: "https://github.com/daman599/portfolio",
     },
   ];
@@ -29,12 +29,12 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="w-full bg-[#1E1E1E] text-white py-12 px-6 md:px-20"
+      className="w-full bg-primary text-secondary py-12 md:py-20 "
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="container md:max-w-[1440px] m-auto px-6">
         <h2 className="text-4xl md:text-5xl py-8 font-bold mb-10 text-center relative w-fit mx-auto">
-          <span className="text-gray-400">My </span>
-          <span className="text-blue-500 relative inline-block">
+          <span className="text-secondary">My </span>
+          <span className="text-tertiary relative inline-block">
             Projects
             <svg viewBox="0 0 130 20" preserveAspectRatio="none" className="absolute -bottom-5 left-0 w-full h-5">
               <path
@@ -57,29 +57,29 @@ export function Projects() {
           </span>
         </h2>
 
-        <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 list-none">
+        <ul className="list-none max-w-4xl m-auto flex flex-col gap-10 justify-center items-center text-center">
           {projects.map((project, index) => (
-            <li key={index} className="min-h-[18rem]">
-              <div className="relative h-full rounded-2xl border border-neutral-700 p-1 md:rounded-3xl md:p-1 overflow-hidden">
+            <li key={index} className="sticky top-24 ">
+              <div className="relative  rounded-2xl border border-tertiary overflow-hidden p-1">
 
-                <div className="relative z-10 flex flex-col h-full justify-between gap-4 rounded-2xl p-6 bg-[#2A2A2A]">
+                <div className="relative z-10 flex flex-col h-full justify-between gap-4 rounded-xl p-6 bg-[#141414]">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-auto rounded-lg object-contain"
                   />
                   <div className="space-y-2">
-                    <h3 className="text-2xl font-semibold text-blue-400">
+                    <h3 className="text-2xl font-semibold text-tertiary">
                       {project.title}
                     </h3>
                     <p className="text-gray-300">{project.description}</p>
                   </div>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 justify-center items-center">
                     <a
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
+                      className="px-4 py-2 bg-tertiary text-white rounded-full text-center min-w-[100px] hover:bg-secondary hover:text-primary transition"
                     >
                       Live
                     </a>
@@ -87,7 +87,7 @@ export function Projects() {
                       href={project.codeLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition"
+                      className="px-4 py-2 border border-white rounded-full text-center min-w-[100px] hover:bg-white hover:text-black transition"
                     >
                       Code
                     </a>

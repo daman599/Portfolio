@@ -1,8 +1,19 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* Scroll Smooth  */
+html {
+  scroll-behavior: smooth;
+}
+
 
 @theme inline {
+
+  --color-primary: #0B0C0D;
+  --color-secondary:#fff;
+  --color-tertiary:#155dfc;
   --animate-move: move 5s linear infinite;
- 
+  --default-font-family:"Oswald", sans-serif;
+  
   @keyframes move {
     0% {
       transform: translateX(-200px);
@@ -10,5 +21,11 @@
     100% {
       transform: translateX(200px);
     }
+  }
+}
+
+@media screen and (max-width:768px){
+  .iframe-chatbot iframe{
+    min-height: 400px !important;
   }
 }

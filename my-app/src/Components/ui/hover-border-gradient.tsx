@@ -57,13 +57,13 @@ export function HoverBorderGradient({
   }, [hovered]);
   return (
     <Tag
-      onMouseEnter={(event: React.MouseEvent<HTMLDivElement>) => {
+      onMouseEnter={()=>{
         setHovered(true);
       }}
       
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex rounded-full border border-black dark:border-black content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+        "relative flex rounded-full border border-primary dark:border-primary content-center bg-primary/20 hover:bg-primary/10 transition duration-500 dark:bg-secondary/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
         containerClassName
       )}
       {...props}
