@@ -1,7 +1,6 @@
 import { HoverEffect } from "./ui/card-hover-effect";
 
 import {
-  SiHtml5,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -9,6 +8,7 @@ import {
   SiExpress,
   SiMongodb,
   SiTailwindcss,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export function Skills() {
@@ -26,10 +26,6 @@ export function Skills() {
         <HoverEffect
           items={[
             {
-              title: "HTML",
-              icon: <SiHtml5 className="text-orange-500 text-3xl" />,
-            },
-            {
               title: "TailwindCSS",
               icon: <SiTailwindcss className="text-cyan-400 text-3xl" />,
             },
@@ -44,6 +40,10 @@ export function Skills() {
             {
               title: "React",
               icon: <SiReact className="text-cyan-400 text-3xl" />,
+            },
+            {
+              title: "Next.js",
+              icon: <SiNextdotjs className="text-gray-700 text-3xl" />,
             },
             {
               title: "Node.js",
