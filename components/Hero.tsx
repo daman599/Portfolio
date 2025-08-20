@@ -7,12 +7,12 @@ return <div className="w-[320px]  h-screen flex flex-col items-center justify-ce
        <p className=" text-[#999999] font-medium ">portfolio</p>
      </div>
 
-     <div className="mt-8 flex flex-col items-center font-medium text-[#999999] leading-[25px]">
+     <div className="mt-10 flex flex-col items-center font-medium text-[#999999] leading-[25px]">
        <div className=" px-16 text-[24px]">web developer</div>
        <div className=" text-[25px] mt-4">with ui/ux designing skills</div>
      </div>
 
-     <div className="flex gap-2 w-[97px] h-[17px] text-[#999999] text-[14px] font-light mt-10">
+     <div className="flex gap-2 text-[#999999] text-[14px] font-light mt-10 items-center justify-center">
         <div>Punjab,</div>
         <div>India</div>
      </div>
