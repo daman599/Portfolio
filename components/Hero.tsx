@@ -1,10 +1,10 @@
-const Hero = ()=>{
+const Hero = () => {
 return <div className="w-[320px]  h-screen flex flex-col items-center justify-center ml-auto mr-auto ">
      
      <div className="mt-12 text-[64px] flex flex-col items-center leading-[1.1] ">
-       <p className=" text-white font-medium">daman</p>
-       <p className="  text-[#999999] italic tracking-[-3px] ">personal</p>
-       <p className=" text-[#999999] font-medium ">portfolio</p>
+       <div className="text-white font-medium">daman</div>
+       <div className="text-[#999999] italic tracking-[-3px] ">personal</div>
+       <div className="text-[#999999] font-medium ">portfolio</div>
      </div>
 
      <div className="mt-10 flex flex-col items-center font-medium text-[#999999] leading-[25px]">

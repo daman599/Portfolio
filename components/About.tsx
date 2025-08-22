@@ -40,7 +40,7 @@ const About = () => {
 
                 <p className='ml-[415px] mt-[47px] font-medium text-[20px] leading-[25px]'>Tech-stack</p>
 
-                <div className='mt-[48px] ml-[415px] w-[406px] h-[121px] mb-[113px] flex flex-wrap gap-4'>
+                <div className='mt-[48px] ml-[415px] w-[406px] h-[121px] flex flex-wrap gap-3'>
                     {skills.map((skill, index) => (
                         <div
                             key={index}
