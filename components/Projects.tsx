@@ -4,10 +4,12 @@ import { Dot } from "lucide-react";
 const projects = [
    {
       "project_name": "Funflix",
+      "project_type": "Full-stack web app",
       "month": "June",
    },
    {
       "project_name": "ResumeMatch AI",
+      "project_type": "Full-stack web app",
       "month": "July",
    }
 ]
@@ -22,8 +24,10 @@ const Projects = () => {
          </div>
 
          <div className="flex gap-[42px] ml-[217px] mt-[51px]">
-            {projects.map(({ project_name, month }, index) => (
+            {projects.map(({ project_name,project_type, month }, index) => (
                <div key={index}>
+                 <div className="relative overflow-hidden">
+
                   <Image
                      src="/Project_cover_pic.jpg"
                      alt="Project Pic"
@@ -31,6 +35,9 @@ const Projects = () => {
                      height={181}
                      className="rounded-[16px]"
                   />
+                  <div className="absolute top-3 left-4 px-3 rounded-full bg-[#201F1F] font-light text-[10px] leading-[30px]">{project_type}</div>
+                  </div>
+
                   <p className="mt-[23px] font-normal text-[22px] ">{project_name}</p>
                   <div className="flex mt-[10px] items-center">
                      <p className="font-normal text-[14px] text-[#999999]" >2025</p>
