@@ -40,11 +40,11 @@ const About = () => {
 
                 <p className='ml-[415px] mt-[47px] font-medium text-[20px] leading-[25px]'>Tech-stack</p>
 
-                <div className='mt-[48px] ml-[415px] w-[406px] h-[121px] flex flex-wrap gap-3'>
+                <div className='mt-[48px] ml-[415px] w-[406px] h-[121px] flex flex-wrap gap-3 relative'>
                     {skills.map((skill, index) => (
                         <div
                             key={index}
-                            className='flex items-center justify-center rounded-full w-[116px] h-[27px] bg-[#201F1F] border border-[#201F1F] hover:border-[#7E7E7E] px-[15px] cursor-default'>
+                            className=' rounded-full bg-[#201F1F] border border-[#201F1F] hover:border-[#7E7E7E] px-[15px] py-[3px] cursor-default'>
                             {skill}
                         </div>
                     ))}
