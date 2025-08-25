@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = ()=>{
   return (<>
        <div className="w-full h-[1px] bg-[#1C1C1C] mt-[113px]"></div>
@@ -20,8 +22,8 @@ const Footer = ()=>{
        <div className="mt-[58.9px] mr-[94px] w-[148px] h-[69px]">
          <p className="font-normal text-[20px] leading-[25px]">Connect</p>
          <div className="flex gap-10">
-           <button className="mt-[20px] font-medium text-[16px] leading-[25px] text-[#999999] hover:text-[#FFFCFC] cursor-pointer">Github</button>
-           <button className="mt-[20px] font-medium text-[16px] leading-[25px] text-[#999999] hover:text-[#FFFCFC] cursor-pointer">Twitter</button>
+           <Link href= {"https://github.com/daman599"} className="mt-[20px] font-medium text-[16px] leading-[25px] text-[#999999] hover:text-[#FFFCFC] cursor-pointer">Github</Link>
+           <Link href= {"https://x.com/daman76752"} className="mt-[20px] font-medium text-[16px] leading-[25px] text-[#999999] hover:text-[#FFFCFC] cursor-pointer">Twitter</Link>
           </div>
        </div>
 

@@ -1,11 +1,11 @@
 import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 
-const About = () => {
-
-    const skills = ["Javascript", "Typrescript", "TailwindCss", "React",
+const skills = ["Javascript", "Typrescript", "TailwindCss", "React",
         "Next.js", "Node.js", "Express", "MongoDB"];
 
+const About = () => {
+    
     return (
         <>
             <div className='flex ml-96 mr-96 justify-between  mt-24'>
