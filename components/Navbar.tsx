@@ -3,7 +3,7 @@
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed top-0 w-full backdrop-blur-md bg-[#0a0a0a]/50">
+      <nav className="fixed top-0 w-full backdrop-blur-md bg-[#0a0a0a]/50 z-50">
         <div className="flex justify-between my-2">
           <div className=" ml-50 w-[103px] h-[44px] py-1 px-2 text-[24px] font-normal tracking-[3px] hover:text-[#999999] cursor-default">daman</div>
           <div className="flex gap-4 mr-50 py-1 px-2 max-w-64">

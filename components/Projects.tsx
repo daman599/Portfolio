@@ -26,7 +26,7 @@ const Projects = () => {
          <div className="flex gap-[42px] ml-[217px] mt-[51px]">
             {projects.map(({ project_name,project_type, month }, index) => (
                <div key={index}>
-                 <div className="relative overflow-hidden">
+                 <div className="relative">
 
                   <Image
                      src="/Project_cover_pic.jpg"
