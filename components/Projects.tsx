@@ -15,6 +15,7 @@ const projects = [
       "month": "July",
    }
 ]
+
 const Projects = () => {
    return (
       <>
