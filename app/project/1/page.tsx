@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { ArrowLeft , Dot , ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Project1 = () =>{
     const router = useRouter();
@@ -33,10 +34,16 @@ const Project1 = () =>{
                 className="rounded-[16px] ml-[100px]"/>
                 
                 <div className="ml-[270px] mt-[20.92px] flex gap-10 ">
-                  <div className="bg-[#161515] w-[71px] h-[26px] px-5 rounded-full cursor-pointer">Live</div>
-                  <div className="bg-[#161515] w-[71px] h-[26px] px-4 rounded-full cursor-pointer">Code</div>
+                 <Link href="https://resume-match-ai-three.vercel.app/">
+                    <div className="bg-[#161515] w-[71px] h-[26px] px-5 py-[0.4px] rounded-full cursor-pointer">Live</div>
+                  </Link>
+                  
+                  <Link href="https://github.com/daman599/Resume-match-ai">
+                  <div className="bg-[#161515] w-[71px] h-[26px] px-4 py-[0.4px] rounded-full cursor-pointer">Code</div>
+                  </Link>
                 </div>
             </div>
+            
             </div>
              <div className="w-[985px] h-[1px] bg-[#1C1C1C] ml-[218px] mr-[128px]"></div>
 
