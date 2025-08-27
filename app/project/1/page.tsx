@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from "next/navigation";
-import { ArrowLeft , Dot } from "lucide-react";
+import { ArrowLeft , Dot , ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const Project1 = () =>{
@@ -64,6 +64,22 @@ const Project1 = () =>{
             </div>
 
         </div>
+
+        <div className="w-[985px] h-[1px] bg-[#1C1C1C] ml-[218px] mr-[128px] mt-[38px]"></div>
+ 
+        <div className="ml-[225px] mt-[33px]">
+            <p className=" font-medium text-[24px] leading-[25px]">Things I learned while building this project</p>
+            
+            <div className="flex gap-[10px] mt-[36px]">
+                <ArrowRight color="#999999"/>
+                <p className="text-[#999999] font-medium text-[16px] leading-[25px]">writing clean & organized code</p>
+            </div>
+            <div className="flex gap-[10px]  mt-[14px]">
+               <ArrowRight color="#999999"/>
+               <p className="text-[#999999] font-medium text-[16px] leading-[25px]">used caching for fetching same jobs data again & again </p>
+            </div>
+        </div>
+
   
         </>
 }
