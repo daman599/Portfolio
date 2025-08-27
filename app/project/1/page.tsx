@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft , Dot } from "lucide-react";
 import Image from "next/image";
 
 const Project1 = () =>{
@@ -32,16 +32,39 @@ const Project1 = () =>{
                 height={296}
                 className="rounded-[16px] ml-[100px]"/>
                 
-                <div className=" ml-[270px] mt-[20.92px] flex gap-10">
-                  <div className="bg-[#161515] w-[71px] h-[26px] px-5 rounded-full">Live</div>
-                  <div className="bg-[#161515] w-[71px] h-[26px] px-4 rounded-full">Code</div>
+                <div className="ml-[270px] mt-[20.92px] flex gap-10 ">
+                  <div className="bg-[#161515] w-[71px] h-[26px] px-5 rounded-full cursor-pointer">Live</div>
+                  <div className="bg-[#161515] w-[71px] h-[26px] px-4 rounded-full cursor-pointer">Code</div>
                 </div>
             </div>
             </div>
              <div className="w-[985px] h-[1px] bg-[#1C1C1C] ml-[218px] mr-[128px]"></div>
 
-
+        <div className="ml-[225px] mt-[33px]">
+            <p className="font-medium text-[24px] leading-[30px]">Tech-stack used</p>
             
+            <div className="flex gap-[216px]">
+             <div className="mt-[33px]">
+             <p className="font-normal text-[14px] text-[#999999]">Frontend</p>
+               <ul className="font-normal text-[14px] mt-[16px]">
+                  <div className="flex my-2"><Dot/><li>Next.js</li></div>
+                  <div className="flex my-2"><Dot/><li>TailwindCss</li></div>
+                  <div className="flex my-2"><Dot/><li>Zustand</li></div>
+              </ul>
+             </div>
+
+             <div className="mt-[33px]">
+              <p className="font-normal text-[14px] text-[#999999]">Backend</p>
+               <ul className="font-normal text-[14px] mt-[16px]">
+                  <div className="flex my-2"><Dot/><li>NextAuth</li></div>
+                  <div className="flex my-2"><Dot/><li>MongoDB</li></div>
+                  <div className="flex my-2"><Dot/><li>Groq API</li></div>
+              </ul>
+             </div>
+            </div>
+
+        </div>
+  
         </>
 }
 
