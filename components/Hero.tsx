@@ -1,6 +1,6 @@
 const Hero = () => {
-return <div className="w-[320px]  h-screen flex flex-col items-center justify-center ml-auto mr-auto ">
-     
+return <>
+<div className="w-[320px]  h-screen flex flex-col items-center justify-center  ml-auto mr-auto ">
      <div className="mt-12 text-[64px] flex flex-col items-center leading-[1.1] ">
        <div className="text-white font-medium">daman</div>
        <div className="text-[#999999] italic tracking-[-3px] ">personal</div>
@@ -16,8 +16,12 @@ return <div className="w-[320px]  h-screen flex flex-col items-center justify-ce
         <div>Punjab,</div>
         <div>India</div>
      </div>
-
 </div>
+
+<div className="w-[19px] h-[56px] bg-[#302F2F] rounded-full px-1.5 pt-2 mb-8 animate-bounce items-center justify-center ml-auto mr-auto">
+      <div className="bg-[#545050] h-[20px]  font-bold rounded-full"></div>
+     </div>
+</>
 }
 
 export default Hero;
