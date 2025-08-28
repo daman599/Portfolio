@@ -25,9 +25,9 @@ const Project = ({project_name,
     things_learnt,
  }:project) => {
 
-    const router = useRouter();
-    return <>
-
+const router = useRouter();
+    return (
+        <>
         <button onClick={() => {
             router.push("/");
         }}
@@ -114,8 +114,8 @@ const Project = ({project_name,
         </div>
         </>
         }
-
     </>
+    );
 }
 
 export default Project;

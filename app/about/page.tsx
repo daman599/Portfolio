@@ -1,7 +1,7 @@
-import About from "@/components/About";
+import AboutComponent from "@/components/About";
 
-export default function(){
+export default function About(){
     return (
-       <About/>
+       <AboutComponent/>
     );
 }

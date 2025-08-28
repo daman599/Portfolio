@@ -1,19 +1,16 @@
 import Project from "@/components/commonComponent/Project";
 
-const Project2 = () =>{
-    
-    return <>
+export default function Project1(){
+    return ( 
              <Project
-             project_name = {"ResumeMatch AI"}
+             project_name = {"Funflix"}
              project_description = {"AI-powered resume analyzer that intelligently matches your resume with the most relevant and up-to-date job postings based on your skills and experience."}
-             project_pic = {"/ResumeMatch_AI.png"}
-             live_link = {"https://resume-match-ai-three.vercel.app"}
-             code_link = {"https://github.com/daman599/Resume-match-ai"}
-             frontend_techStack = {["Next.js","TailwindCss","Zustand"]}
-             backend_techStack = {["NextAuth","MongoDB","Groq API"]}
+             project_pic = {"/Funflix.png"}
+             live_link = {"https://funflix-frontend.onrender.com/"}
+             code_link = {"https://github.com/daman599/Funflix"}
+             frontend_techStack = {["Javascript","React.js","TailwindCss"]}
+             backend_techStack = {["Node.js","Express","MongoDB","JWT","OAuth"]}
              things_learnt={["writing clean & organized code","used caching for fetching same jobs data again & again"]}
              />
-        </>
+    );
 }
-
-export default Project2;

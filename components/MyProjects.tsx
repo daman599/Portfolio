@@ -6,23 +6,25 @@ import { useRouter } from "next/navigation";
 
 const projects = [
    {
-      "project_name": "Funflix",
-      "project_type": "Full-stack web app",
-      "project_pic" : "/Funflix.png",
-      "navigateTo" : "/project/1",
-      "month": "June",
-   },
-   {
       "project_name": "ResumeMatch AI",
       "project_type": "Full-stack web app",
-      "project_pic" : "/ResumeMatch_AI.png",
-      "navigateTo" : "/project/2",
+      "project_pic": "/ResumeMatch_AI.png",
+      "navigateTo": "/project/1",
       "month": "July",
+   },
+   {
+      "project_name": "Funflix",
+      "project_type": "Full-stack web app",
+      "project_pic": "/Funflix.png",
+      "navigateTo": "/project/2",
+      "month": "June",
    }
 ]
 
 const Projects = () => {
+
    const router = useRouter();
+
    return (
       <>
          <p className="ml-[217px] text-[48px] font-medium">My Projects</p>
@@ -33,29 +35,29 @@ const Projects = () => {
          </div>
 
          <div className="flex gap-[42px] ml-[217px] mt-[51px]">
-            {projects.map(({ project_name,project_type, project_pic, month ,navigateTo}, index) => (
+            {projects.map(({ project_name, project_type, project_pic, month, navigateTo }, index) => (
                <div key={index}>
-                 <button onClick={()=>{
-                  router.push(navigateTo);
-                 }} 
-                 className="relative cursor-pointer group w-[349px] h-[181px]">
+                  <button onClick={() => {
+                     router.push(navigateTo);
+                  }}
+                     className="relative cursor-pointer group w-[349px] h-[181px]">
 
-                  <Image
-                     src="/Project_cover_pic.jpg"
-                     alt="Normal"
-                     fill
-                     className="rounded-[16px] object-cover opacity-100 transition-opacity duration-300 group-hover:opacity-0"
-                  />
+                     <Image
+                        src="/Project_cover_pic.jpg"
+                        alt="Normal"
+                        fill
+                        className="rounded-[16px] object-cover opacity-100 transition-opacity duration-300 group-hover:opacity-0"
+                     />
 
-                   <Image
-                     src={project_pic}
-                     alt="Hover"
-                     fill
-                     className="rounded-[16px] object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  />
+                     <Image
+                        src={project_pic}
+                        alt="Hover"
+                        fill
+                        className="rounded-[16px] object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                     />
 
-                  <div className="absolute top-3 left-4 px-3 rounded-full bg-[#201F1F] font-light text-[10px] leading-[30px] transition-opacity duration-300 opacity-100 group-hover:opacity-0">{project_type}</div>
-               </button>
+                     <div className="absolute top-3 left-4 px-3 rounded-full bg-[#201F1F] font-light text-[10px] leading-[30px] transition-opacity duration-300 opacity-100 group-hover:opacity-0">{project_type}</div>
+                  </button>
 
                   <p className="mt-[23px] font-normal text-[22px] ">{project_name}</p>
                   <div className="flex mt-[10px] items-center">

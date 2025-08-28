@@ -8,6 +8,7 @@ const skills = ["Javascript", "Typrescript", "TailwindCss", "React",
     "Next.js", "Node.js", "Express", "MongoDB"];
 
 const About = () => {
+    
     const router = useRouter();
 
     return (
