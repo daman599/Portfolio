@@ -1,14 +1,14 @@
 'use client'
 
 import { ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
 import { useRouter } from "next/navigation";
+import TiltedCard from './uiComponent/TiltedCard';
 
 const skills = ["Javascript", "Typrescript", "TailwindCss", "React",
     "Next.js", "Node.js", "Express", "MongoDB"];
 
 const About = () => {
-    
+
     const router = useRouter();
 
     return (
@@ -37,13 +37,21 @@ const About = () => {
             </div>
 
             <div className='ml-24 flex-col'>
-                <Image
-                    src="/photo.svg"
-                    alt="My pic"
-                    width={310}
-                    height={310}
-                    className='mt-[40px] ml-[415px]'
-                />
+                <div className='mt-[40px] ml-[415px]'>
+                    <TiltedCard
+                        imageSrc="/photo.svg"
+                        containerHeight="310px"
+                        containerWidth="310px"
+                        imageHeight="310px"
+                        imageWidth="310px"
+                        rotateAmplitude={12}
+                        scaleOnHover={1.2}
+                        showMobileWarning={false}
+                        showTooltip={false}
+                        displayOverlayContent={false}
+
+                    />
+                </div>
                 <p className='ml-[415px] mt-[38px]  text-[36px] font-medium'>Damanpreet Kaur</p>
 
                 <div className='ml-[415px] mt-[38px] w-[451px] h-[150px] text-[#999999] font-medium text-[16px] leading-[25px]'>
