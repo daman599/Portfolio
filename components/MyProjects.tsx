@@ -56,8 +56,7 @@ const Projects = () => {
                            alt="Hover"
                            fill
                            className="object-cover transition-all duration-500 ease-in-out 
-                          opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100
-                        rounded-[16px]"
+                          opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100"
                         />
 
                         <div className="absolute top-3 left-4 px-3 rounded-full bg-[#201F1F] font-light text-[10px] leading-[30px] transition-opacity duration-300 opacity-100 group-hover:opacity-0">{project_type}</div>

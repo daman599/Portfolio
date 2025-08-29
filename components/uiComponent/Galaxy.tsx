@@ -217,10 +217,16 @@ export default function Galaxy({
   useEffect(() => {
     if (!ctnDom.current) return;
     const ctn = ctnDom.current;
+
+    const canvas = document.createElement("canvas");
+    ctn.appendChild(canvas);
+
     const renderer = new Renderer({
+      canvas,                
       alpha: transparent,
       premultipliedAlpha: false,
     });
+
     const gl = renderer.gl;
 
     if (transparent) {
