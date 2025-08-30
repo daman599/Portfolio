@@ -1,29 +1,36 @@
 'use client'
 import { useRouter } from "next/navigation";
 
+const buttons = [
+  { btn: "Projects", navigateTo: "/" },
+  { btn: "About", navigateTo: "/about" }
+]
+
 const Navbar = () => {
   const router = useRouter();
-  
+
   return (
-    <>
-      <nav className="fixed top-0 w-full backdrop-blur-md bg-[#0a0a0a]/50 z-50">
-        <div className="flex justify-between my-2">
-          <div className=" ml-50 w-[103px] h-[44px] py-1 px-2 text-[24px] font-normal tracking-[3px] hover:text-[#999999] cursor-default">daman</div>
-          <div className="flex gap-4 mr-50 py-1 px-2 max-w-64">
-            <button onClick={()=>{
-              router.push("/");
-            }}
-            className="w-[90px] h-[39px] font-normal text-[16px] text-white tracking-[0px] rounded-[5px]  hover:bg-[#262525]/45 hover:text-[#999999] cursor-pointer">Projects</button>
-            
-            <button onClick={()=>{
-              router.push("/about");
-            }}
-            className="w-[90px] h-[39px] font-normal text-[16px] text-white tracking-[0px] rounded-[5px]  hover:bg-[#262525]/45 hover:text-[#999999] cursor-pointer">About</button>
-          </div>
+    <nav className="fixed top-0 w-full left-0 backdrop-blur-md bg-[#0a0a0a]/50 z-50">
+      <div className="flex justify-between py-1 px-14 md:px-32 lg:px-[194px]">
+
+        <p className="py-2 px-2 text-base md:text-2xl font-normal tracking-[3px] hover:text-[#999999] cursor-default">daman</p>
+
+        <div className="flex gap-2 sm:gap-4 py-1 px-1 md:py-2 md:px-2">
+          {buttons.map(({ btn, navigateTo }, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                router.push(navigateTo);
+              }}
+              className="w-[70px] h-[30px] md:w-[90px] md:h-[39px] font-normal text-[12px] md:text-base text-white tracking-[0px] rounded-md  hover:bg-[#262525]/45 hover:text-[#999999] cursor-pointer">
+              {btn}
+            </button>
+          ))}
         </div>
-        <div className="w-full h-[1px] bg-[#1C1C1C]"></div>
-      </nav>
-    </>
+      </div>
+
+      <div className="w-full h-[1px] bg-[#1C1C1C]"></div>
+    </nav>
   );
 }
 
