@@ -29,18 +29,18 @@ const Project = ({
   const router = useRouter();
 
   return (
-    <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-52 mt-20">
+    <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-52 mt-14 md:mt-20">
       <button
         onClick={() => router.push("/")}
         className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group w-[165px] h-[37px] px-2 py-1.5 cursor-pointer"
       >
         <ArrowLeft className="group-hover:text-white text-[#999999] w-4 h-4 transition-colors" />
-        <p className="font-medium text-[#999999] group-hover:text-white text-sm transition-colors">
+        <p className="font-medium text-[#999999] group-hover:text-white text-xs md:text-sm transition-colors">
           Back to Projects
         </p>
       </button>
 
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-10">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-7 mt-10">
         <div className="flex-1 text-center lg:text-left">
           <p className="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             {project_name}
