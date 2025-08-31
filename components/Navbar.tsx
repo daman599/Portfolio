@@ -11,11 +11,11 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full left-0 backdrop-blur-md bg-[#0a0a0a]/50 z-50">
-      <div className="flex justify-between py-1 px-14 md:px-32 lg:px-[194px]">
+      <div className="flex justify-between py-1 px-14 md:px-24 lg:px-28 xl:px-[194px]">
 
-        <p className="py-2 px-2 text-base md:text-2xl font-normal tracking-[3px] hover:text-[#999999] cursor-default">daman</p>
+        <div className="px-2 py-2 md:py-3 text-base md:text-2xl font-normal tracking-[3px] hover:text-[#999999] cursor-default">daman</div>
 
-        <div className="flex gap-2 sm:gap-4 py-1 px-1 md:py-2 md:px-2">
+        <div className="flex gap-2 sm:gap-4 p-1 md:p-2">
           {buttons.map(({ btn, navigateTo }, index) => (
             <button
               key={index}
