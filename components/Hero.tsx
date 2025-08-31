@@ -1,41 +1,45 @@
-import Galaxy from "@/components/uiComponent/Galaxy";
+import Galaxy from "./uiComponent/Galaxy";
 
 const Hero = () => {
-  return <>
-    <div className="w-[320px] h-screen flex flex-col items-center justify-center  ml-auto mr-auto ">
-      <div className="absolute inset-0 -z-10">
-        <Galaxy
-          mouseRepulsion={false}
-          mouseInteraction={false}
-          density={1.5}
-          glowIntensity={0.5}
-          saturation={0.8}
-          hueShift={140}
-        />
+  return (
+    <>
+      <div className="w-full max-w-[320px] sm:max-w-[480px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] h-screen flex flex-col items-center justify-center mx-auto px-4 sm:px-6 md:px-8">
+
+        <div className="absolute inset-0 -z-10">
+          <Galaxy
+            mouseRepulsion={false}
+            mouseInteraction={false}
+            density={1.5}
+            glowIntensity={0.5}
+            saturation={0.8}
+            hueShift={140}
+          />
+        </div>
+
+        <div className="mt-12 text-[40px] sm:text-[52px] md:text-[64px] flex flex-col items-center leading-[1.1] text-center">
+          <div className="text-white font-medium">daman</div>
+          <div className="text-[#999999] italic tracking-[-1px] sm:tracking-[-2px] md:tracking-[-3px]">personal</div>
+          <div className="text-[#999999] font-medium">portfolio</div>
+        </div>
+
+        <div className="mt-6 md:mt-10 font-medium text-[#999999] leading-relaxed text-center">
+          <div className="text-base sm:text-lg md:text-xl lg:text-2xl">web developer</div>
+          <div className="text-sm sm:text-[18px] md:text-[21px] lg:text-[25px] mt-2 md:mt-4">
+            with ui/ux designing skills
+          </div>
+        </div>
+
+        <div className="mt-6 md:mt-10 flex items-center justify-center gap-1 md:gap-2 text-[#999999] text-xs sm:text-sm md:text-base font-light">
+          <div>Punjab,</div>
+          <div>India</div>
+        </div>
       </div>
 
-      <div className="mt-12 text-[64px] flex flex-col items-center leading-[1.1] ">
-        <div className="text-white font-medium">daman</div>
-        <div className="text-[#999999] italic tracking-[-3px] ">personal</div>
-        <div className="text-[#999999] font-medium ">portfolio</div>
+      <div className="absolute bottom-7 md:bottom-5 lg:bottom-8 left-1/2 -translate-x-1/2 w-2 sm:w-3 md:w-3.5 lg:w-4 z-20 h-9 md:h-11 lg:h-14 bg-[#302F2F] rounded-full flex items-start justify-center pt-2 animate-bounce">
+        <div className="bg-[#545050] h-2.5 sm:h-3 md:h-4 lg:h-5 w-1 rounded-full"></div>
       </div>
-
-      <div className="mt-10 flex flex-col items-center font-medium text-[#999999] leading-[25px]">
-        <div className=" px-16 text-[24px]">web developer</div>
-        <div className=" text-[25px] mt-4">with ui/ux designing skills</div>
-      </div>
-
-      <div className="flex gap-2 text-[#999999] text-[14px] font-light mt-10 items-center justify-center">
-        <div>Punjab,</div>
-        <div>India</div>
-      </div>
-
-      <div className="absolute bottom-6 w-[19px] h-[56px] bg-[#302F2F] rounded-full px-1.5 pt-2 animate-bounce ">
-        <div className="bg-[#545050] h-[20px] w-[8px] rounded-full"></div>
-      </div>
-    </div>
-
-  </>
-}
+    </>
+  );
+};
 
 export default Hero;
