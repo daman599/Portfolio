@@ -1,38 +1,61 @@
 import Link from "next/link";
 
-const Footer = ()=>{
-  return (<>
-       <div className="w-full h-[1px] bg-[#1C1C1C] mt-[113px]"></div>
+const Footer = () => {
+  return (
+    <>
+      <div className="w-full h-px bg-[#1C1C1C] mt-12 md:mt-20" />
 
-       <div className="flex justify-between w-[1024px] ml-[218px] mr-[128px]">
+      <div className="flex flex-col md:flex-row justify-between w-full mt-6 max-w-6xl px-6 md:px-8 mx-auto gap-8 md:gap-12 lg:gap-20">
 
-       <div className=" mt-[68.9px] w-[345px] h-[97px] mb-[69px]">
-           <p className="text-[24px] font-medium leading-[30px]">daman</p>
-           <p className="mt-[17px] text-[#999999] font-medium text-[16px] leading-[25px]">Blending design and technology to create 
-               functional, minimal, and impactful web apps.</p>
-       </div>
-       
-       <div className="mr-[120px] mt-[58.9px] mb-[44px]">
-         <p className="font-normal text-[20px] leading-[25px]">Contact</p>
-         <p className="mt-[19px] text-[#999999] font-medium text-[16px] leading-[25px]">damanpreetk117@gmail.com</p>
-         <p className="mt-[6px] text-[#999999] font-medium text-[16px] leading-[25px]">+91 8194990268</p>
-         <p className="mt-[5px] text-[#999999] font-medium text-[16px] leading-[25px]">Punjab, India</p>
-       </div>
+        <div className="max-w-md">
+          <p className="text-lg md:text-xl lg:text-2xl font-medium leading-snug">
+            daman
+          </p>
+          <p className="mt-4 text-[#999999] font-medium text-sm lg:text-base leading-relaxed">
+            Blending design and technology to create functional, minimal, and
+            impactful web apps.
+          </p>
+        </div>
 
-       <div className="mt-[58.9px] mr-[94px] w-[148px] h-[69px]">
-         <p className="font-normal text-[20px] leading-[25px]">Connect</p>
-         <div className="flex gap-10">
-           <Link href= {"https://github.com/daman599"} className="mt-[20px] font-medium text-[16px] leading-[25px] text-[#999999] hover:text-[#FFFCFC] cursor-pointer">Github</Link>
-           <Link href= {"https://x.com/daman76752"} className="mt-[20px] font-medium text-[16px] leading-[25px] text-[#999999] hover:text-[#FFFCFC] cursor-pointer">Twitter</Link>
+        <div>
+          <p className="font-normal text-sm md:text-base lg:text-xl leading-[25px]">
+            Contact
+          </p>
+          <div className="mt-4 text-[#999999] font-medium text-sm md:text-base leading-[25px]">
+            <p>damanpreetk117@gmail.com</p>
+            <p className="mt-1">+91 8194990268</p>
+            <p className="mt-1">Punjab, India</p>
           </div>
-       </div>
+        </div>
 
-       </div>
+        <div>
+          <p className="font-normal text-sm md:text-base lg:text-xl leading-[25px]">
+            Connect
+          </p>
+          <div className="flex gap-4 md:gap-6 lg:gap-10 mt-3 md:mt-4 font-medium text-sm md:text-base text-[#999999]">
+            <Link
+              href="https://github.com/daman599"
+              className="cursor-pointer hover:text-[#FFFCFC]"
+            >
+              Github
+            </Link>
+            <Link
+              href="https://x.com/daman76752"
+              className="cursor-pointer hover:text-[#FFFCFC]"
+            >
+              Twitter
+            </Link>
+          </div>
+        </div>
+      </div>
 
-       <div className="w-[1024px] h-[1px] bg-[#1C1C1C] ml-[218px] mr-[128px]"></div>
+      <div className="w-full max-w-[1090px] h-px bg-[#1C1C1C] mt-6 mx-auto px-4" />
 
-       <p className="flex items-center justify-center mt-[37px] mb-[36px] text-[14px] font-light text-[#CCCCCC]">© 2025 daman. All rights reserved.</p>
-      
-  </>);
-}
+      <p className="flex items-center justify-center mt-4 md:mt-6 lg:mt-9 mb-4 md:mb-6 lg:mb-9 text-[10px] md:text-xs lg:text-sm font-light text-[#CCCCCC]">
+        © 2025 daman. All rights reserved.
+      </p>
+    </>
+  );
+};
+
 export default Footer;
