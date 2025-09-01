@@ -26,6 +26,7 @@ const Project = ({
   backend_techStack,
   things_learnt,
 }: project) => {
+  
   const router = useRouter();
 
   return (

@@ -1,4 +1,4 @@
-import Project from "@/components/commonComponent/Project";
+import Project from "@/components/commonComponents/Project";
 
 export default function Project1(){
     return ( 

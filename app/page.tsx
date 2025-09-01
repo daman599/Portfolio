@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
-import Projects from "@/components/MyProjects";
+import Hero from "@/components/landingpageComponents/Hero";
+import Projects from "@/components/landingpageComponents/MyProjects";
 
 export default function Home() {
   return (

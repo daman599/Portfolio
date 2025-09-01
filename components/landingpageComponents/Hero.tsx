@@ -1,4 +1,4 @@
-import Galaxy from "./uiComponent/Galaxy";
+import Galaxy from "@/components/uiComponents/Galaxy";
 
 const Hero = () => {
   return (
