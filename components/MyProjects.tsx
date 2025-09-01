@@ -53,14 +53,16 @@ const Projects = () => {
                            src="/Project_cover_pic.jpg"
                            alt="Normal"
                            fill
+                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 349px"
                            className="object-cover transition-all duration-500 ease-in-out 
                              opacity-100 scale-105 group-hover:opacity-0 group-hover:scale-100"
                         />
 
                         <Image
                            src={project_pic}
-                           alt="Hover"
+                           alt={`${project_name} preview`}
                            fill
+                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 349px"
                            className="object-cover transition-all duration-500 ease-in-out 
                              opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100"
                         />

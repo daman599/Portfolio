@@ -32,10 +32,10 @@ const Project = ({
     <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-52 mt-14 md:mt-20">
       <button
         onClick={() => router.push("/")}
-        className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group w-[165px] h-[37px] px-2 py-1.5 cursor-pointer"
+        className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group px-3 py-2 cursor-pointer"
       >
         <ArrowLeft className="group-hover:text-white text-[#999999] w-4 h-4 transition-colors" />
-        <p className="font-medium text-[#999999] group-hover:text-white text-xs md:text-sm transition-colors">
+        <p className="font-medium text-[#999999] group-hover:text-white text-xs  transition-colors">
           Back to Projects
         </p>
       </button>
