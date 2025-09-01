@@ -1,0 +1,43 @@
+export interface ProjectType {
+  id: string,
+  project_name: string,
+  project_description: string,
+  project_type: string
+  project_pic: string,
+  live_link: string,
+  code_link: string,
+  frontend_techStack: string[],
+  backend_techStack?: string[],
+  things_learnt?: string[],
+  month: string,
+}
+
+export const projectsData:ProjectType[] = [
+   {  
+      id: '1',
+      project_name: "ResumeMatch AI",
+      project_description: "AI-powered resume analyzer that intelligently matches your resume with the most relevant and up-to-date job postings.",
+      project_type: "Full-stack web app",
+      project_pic: "/ResumeMatch_AI.png",
+      live_link: "https://resume-match-ai-three.vercel.app",
+      code_link: "https://github.com/daman599/Resume-match-ai",
+      frontend_techStack: ["Next.js","TailwindCss","Zustand"],
+      backend_techStack: ["NextAuth","MongoDB","Groq API"],
+      things_learnt: ["Writing clean & organized code","Used caching for fetching same jobs data again & again"],
+      month: "July",
+   },
+   {
+      id: '2',
+      project_name: "Funflix",
+      project_description: "Funflix is a smart movie discovery platform that helps users instantly find out which streaming service a movie is available on.",
+      project_type: "Full-stack web app",
+      project_pic: "/Funflix.png",
+      live_link: "https://funflix-frontend.onrender.com/",
+      code_link: "https://github.com/daman599/Funflix",
+      frontend_techStack: ["Javascript","React.js","TailwindCss"],
+      backend_techStack: ["Node.js","Express","MongoDB","JWT","OAuth"],
+      things_learnt: ["This project helped me to understand the workflow of a fullstack web application ",
+                "Understood how the React has made life easy for creating dynamic websites"],
+      month: "June",
+   }
+];
