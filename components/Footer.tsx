@@ -23,7 +23,6 @@ const Footer = () => {
           </p>
           <div className="mt-4 text-[#999999] font-medium text-sm md:text-base leading-[25px]">
             <p>damanpreetk117@gmail.com</p>
-            <p className="mt-1">+91 8194990268</p>
             <p className="mt-1">Punjab, India</p>
           </div>
         </div>

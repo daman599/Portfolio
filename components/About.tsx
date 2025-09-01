@@ -18,10 +18,10 @@ const About = () => {
             <div className="flex sm:flex-row justify-between items-center md:px-32 lg:px-48 ">
                 <button
                     onClick={() => router.push("/")}
-                    className="flex gap-3 rounded-[5px] hover:bg-[#262525]/45 items-center justify-center group  px-2 py-1.5 cursor-pointer"
+                    className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group w-[165px] h-[37px] px-2 py-1.5 cursor-pointer"
                 >
-                    <ArrowLeft className="group-hover:text-white text-[#999999] w-5 h-5 transition-colors" />
-                    <p className="font-medium text-[#999999] group-hover:text-white text-xs transition-colors">
+                    <ArrowLeft className="group-hover:text-white text-[#999999] w-4 h-4 transition-colors" />
+                    <p className="font-medium text-[#999999] group-hover:text-white text-xs md:text-sm transition-colors">
                         Back to Projects
                     </p>
                 </button>
