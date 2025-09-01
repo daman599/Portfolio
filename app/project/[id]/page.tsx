@@ -1,14 +1,11 @@
 import { projectsData } from "@/lib/projectsData";
 import Project from "@/components/commonComponents/Project";
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
-
-export default function ProjectDetailsPage({ params }: Props) {
-
+export default function ProjectDetailsPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const project = projectsData.find((p) => p.id === params.id);
 
   if (!project) {
@@ -21,5 +18,11 @@ export default function ProjectDetailsPage({ params }: Props) {
     );
   }
 
-  return <Project {...project} />
+  return <Project {...project} />;
+}
+
+export async function generateStaticParams() {
+  return projectsData.map((project) => ({
+    id: project.id,
+  }));
 }
