@@ -1,11 +1,13 @@
 import { projectsData } from "@/lib/projectsData";
 import Project from "@/components/commonComponents/Project";
 
-export default function ProjectDetailsPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+interface PageProps {
+  params: { 
+    id: string;
+  };
+}
+
+export default function ProjectDetailsPage({ params }: PageProps) {
   const project = projectsData.find((p) => p.id === params.id);
 
   if (!project) {
@@ -18,11 +20,5 @@ export default function ProjectDetailsPage({
     );
   }
 
-  return <Project {...project} />;
-}
-
-export async function generateStaticParams() {
-  return projectsData.map((project) => ({
-    id: project.id,
-  }));
+  return <Project {...project} />
 }
