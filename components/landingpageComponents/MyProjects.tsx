@@ -3,23 +3,7 @@
 import Image from "next/image";
 import { Dot } from "lucide-react";
 import { useRouter } from "next/navigation";
-
-const projects = [
-   {
-      project_name: "ResumeMatch AI",
-      project_type: "Full-stack web app",
-      project_pic: "/ResumeMatch_AI.png",
-      navigateTo: "/project/1",
-      month: "July",
-   },
-   {
-      project_name: "Funflix",
-      project_type: "Full-stack web app",
-      project_pic: "/Funflix.png",
-      navigateTo: "/project/2",
-      month: "June",
-   },
-];
+import { projects } from "@/lib/projects";
 
 const Projects = () => {
    const router = useRouter();
