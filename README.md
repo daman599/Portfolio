@@ -1,6 +1,6 @@
 ## 🚀 Daman | Portfolio
 
-A modern and responsive developer portfolio built with Next.js 13, React, and Tailwind CSS.
+A modern and responsive developer portfolio built with Next.js, React, and Tailwind CSS.
 This portfolio showcases my projects, skills, and passion for creating sleek, user-friendly web applications.
 
 ## ✨ Features
@@ -52,7 +52,7 @@ Projects Section
 
 👨‍💻 Daman
 
-- Portfolio: your-portfolio-link.com
-- GitHub: github.com/daman599
-- Twitter: [x.com/daman76752] https://x.com/daman76752
+- Portfolio: https://your-portfolio-link.com
+- GitHub: https://github.com/daman599
+- Twitter: https://x.com/daman76752
 
