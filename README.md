@@ -14,10 +14,10 @@ This portfolio showcases my projects, skills, and passion for creating sleek, us
 
 ## 🛠️ Tech Stack
 
-- Framework: Next.js
-- Styling: Tailwind CSS
-- Icons: Lucide React
-- Deployment: Vercel
+- Framework: (Next.js)[https://nextjs.org] ↗
+- Styling: (Tailwind CSS)[https://tailwindcss.com] ↗
+- Icons: (Lucide React)[https://lucide.dev/guide/packages/lucide-react] ↗
+- Deployment: (Vercel)[https://vercel.com] ↗
 
 ## 🚀 Getting Started
 
@@ -52,7 +52,7 @@ Projects Section
 
 👨‍💻 Daman
 
-- Portfolio: https://your-portfolio-link.com
-- GitHub: https://github.com/daman599
-- Twitter: https://x.com/daman76752
+- Portfolio: https://your-portfolio-link.com ↗
+- GitHub: https://github.com/daman599 ↗
+- Twitter: https://x.com/daman76752 ↗
 
