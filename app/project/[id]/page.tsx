@@ -1,13 +1,8 @@
 import { projectsData } from "@/lib/projectsData";
 import Project from "@/components/commonComponents/Project";
 
-interface PageProps {
-  params: { 
-    id: string;
-  };
-}
+export default async function Page({ params }: { params: { id: string } }) {
 
-export default function ProjectDetailsPage({ params }: PageProps) {
   const project = projectsData.find((p) => p.id === params.id);
 
   if (!project) {
