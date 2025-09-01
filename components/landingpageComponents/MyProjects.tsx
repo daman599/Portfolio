@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Dot } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { projects } from "@/lib/projects";
+import { projectsData } from "@/lib/projectsData";
 
 const Projects = () => {
    const router = useRouter();
@@ -20,12 +20,12 @@ const Projects = () => {
          </div>
 
          <div className="mt-[51px] flex flex-col md:flex-row gap-10 md:gap-[42px]">
-            {projects.map(
-               ({ project_name, project_type, project_pic, month, navigateTo }, index) => (
+            {projectsData.map(
+               ({ id, project_name, project_type, project_pic, month }, index) => (
                   <div key={index} className="flex flex-col overflow-hidden">
                      <button
                         onClick={() => {
-                           router.push(navigateTo);
+                           router.push(`/project/${id}`);
                         }}
 
                         className="

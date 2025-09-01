@@ -2,19 +2,9 @@
 
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Dot, ArrowRight } from "lucide-react";
+import { ProjectType } from "@/lib/projectsData";
 import Image from "next/image";
 import Link from "next/link";
-
-interface project {
-  project_name: string;
-  project_description: string;
-  project_pic: string;
-  live_link: string;
-  code_link: string;
-  frontend_techStack: string[];
-  backend_techStack?: string[];
-  things_learnt?: string[];
-}
 
 const Project = ({
   project_name,
@@ -25,7 +15,7 @@ const Project = ({
   frontend_techStack,
   backend_techStack,
   things_learnt,
-}: project) => {
+}: ProjectType) => {
   
   const router = useRouter();
 
