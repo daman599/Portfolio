@@ -46,22 +46,19 @@ Now open http://localhost:3000 🎉
 
 Landing Page
 
-<div align="center">
-  <img src="./public/landingpage.png" alt="Landing Page" width="500"/>
-</div>
+<img src="./public/landingpage.png" alt="Landing Page" width="500"/>
 
 Projects Section
 
-<div align="center">
-  <img src="./public/project1.png" alt="Landing Page" width="500"/>
-  <img src="./public/project2.png" alt="Landing Page" width="500"/>
+<img src="./public/project1.png" alt="Landing Page" width="500"/>
 
+<img src="./public/project2.png" alt="Landing Page" width="500"/>
 
 ## 📬 Contact
 
 👨‍💻 Daman
 
-- Portfolio: https://your-portfolio-link.com
+- Portfolio: https://daman-portfolio.vercel.app
 - GitHub: https://github.com/daman599
 - Twitter: https://x.com/daman76752
 
