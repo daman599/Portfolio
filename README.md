@@ -46,9 +46,16 @@ Now open http://localhost:3000 🎉
 
 Landing Page
 
-<img src="./public/landingpage.png" alt="Landing Page" width="500"/>
+<div align="center">
+  <img src="./public/landingpage.png" alt="Landing Page" width="500"/>
+</div>
 
 Projects Section
+
+<div align="center">
+  <img src="./public/project1.png" alt="Landing Page" width="500"/>
+  <img src="./public/project2.png" alt="Landing Page" width="500"/>
+
 
 ## 📬 Contact
 
