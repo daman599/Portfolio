@@ -1,4 +1,4 @@
-import { Vortex } from "../uiComponents/Vortex";
+import { Vortex } from "@/components/ui/Vortex";
 
 const Hero = () => {
   return (

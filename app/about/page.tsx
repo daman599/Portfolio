@@ -2,7 +2,7 @@
 
 import { ArrowLeft } from 'lucide-react';
 import { useRouter } from "next/navigation";
-import TiltedCard from '@/components/uiComponents/TiltedCard';
+import TiltedCard from '@/components/ui/TiltedCard';
 
 const skills = [
     "Javascript", "Typescript", "TailwindCss", "React",
