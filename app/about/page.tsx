@@ -41,7 +41,7 @@ export default function About() {
             <div className="flex flex-col items-center mt-12">
                 <CometCard translateDepth={8}>
                     <Image
-                        src="/photo.svg"
+                        src="/Photo.svg"
                         alt="Profile pic"
                         width={260}
                         height={260}
