@@ -48,17 +48,11 @@ Landing Page
 
 <img src="./public/landingpage.png" alt="Landing Page" width="500"/>
 
-Projects Section
-
-<img src="./public/project1.png" alt="Landing Page" width="500"/>
-
-<img src="./public/project2.png" alt="Landing Page" width="500"/>
-
 ## 📬 Contact
 
 👨‍💻 Daman
 
-- Portfolio: https://daman-portfolio.vercel.app
+- Portfolio: https://daman-portfolio-teal.vercel.app
 - GitHub: https://github.com/daman599
 - Twitter: https://x.com/daman76752
 
