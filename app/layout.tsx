@@ -24,15 +24,15 @@ export const metadata: Metadata = {
     "Frontend",
     "Backend",
   ],
-  authors: [{ name: "Daman", url: "https://your-portfolio-link.com" }],
+  authors: [{ name: "Daman", url: "https://daman-portfolio-teal.vercel.app" }],
   openGraph: {
     title: "Daman | Portfolio",
     description: "Showcasing my projects, skills as a full-stack developer.",
-    url: "https://your-portfolio-link.com",
+    url: "https://daman-portfolio-teal.vercel.app",
     siteName: "Daman Portfolio",
     images: [
       {
-        url: "https://your-portfolio-link.com/preview.png",
+        url: "https://daman-portfolio-teal.vercel.app/landingpage.png",
         width: 1200,
         height: 630,
         alt: "Portfolio Preview",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Daman | Portfolio",
     description: "Discover my projects and skills in full-stack web development.",
     creator: "https://x.com/daman76752",
-    images: ["https://your-portfolio-link.com/preview.png"],
+    images: ["https://daman-portfolio-teal.vercel.app/landingpage.png"],
   },
 };
 
