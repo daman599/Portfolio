@@ -1,18 +1,16 @@
-import Galaxy from "@/components/uiComponents/Galaxy";
+import { Vortex } from "../uiComponents/Vortex";
 
 const Hero = () => {
   return (
     <>
       <div className="w-full max-w-[320px] sm:max-w-[480px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] h-screen flex flex-col items-center justify-center mx-auto px-4 sm:px-6 md:px-8">
 
-        <div className="absolute inset-0 -z-10">
-          <Galaxy
-            mouseRepulsion={false}
-            mouseInteraction={false}
-            density={1.5}
-            glowIntensity={0.5}
-            saturation={0.8}
-            hueShift={140}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+           <Vortex
+            rangeY={800}
+            particleCount={500}
+            baseHue={120}
+            className="flex items-center justify-center px-2 md:px-10 py-4 w-full h-full"
           />
         </div>
 
