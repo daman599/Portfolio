@@ -46,13 +46,15 @@ Now open http://localhost:3000 🎉
 
 Landing Page
 
+<img src="./public/landingpage.png" alt="Landing Page" width="500"/>
+
 Projects Section
 
 ## 📬 Contact
 
 👨‍💻 Daman
 
-- Portfolio: https://your-portfolio-link.com ↗
-- GitHub: https://github.com/daman599 ↗
-- Twitter: https://x.com/daman76752 ↗
+- Portfolio: https://your-portfolio-link.com
+- GitHub: https://github.com/daman599
+- Twitter: https://x.com/daman76752
 
