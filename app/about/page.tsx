@@ -3,12 +3,8 @@
 import { ArrowLeft } from 'lucide-react';
 import { useRouter } from "next/navigation";
 import { CometCard } from '@/components/ui/CometCard';
+import { skills } from '@/lib/skills';
 import Image from "next/image"
-
-const skills = [
-    "Javascript", "Typescript", "TailwindCss", "React",
-    "Next.js", "Node.js", "Express", "MongoDB"
-];
 
 export default function About() {
     const router = useRouter();
