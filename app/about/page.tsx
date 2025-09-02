@@ -2,14 +2,15 @@
 
 import { ArrowLeft } from 'lucide-react';
 import { useRouter } from "next/navigation";
-import TiltedCard from '@/components/ui/TiltedCard';
+import { CometCard } from '@/components/ui/CometCard';
+import Image from "next/image"
 
 const skills = [
     "Javascript", "Typescript", "TailwindCss", "React",
     "Next.js", "Node.js", "Express", "MongoDB"
 ];
 
-export default function About(){
+export default function About() {
     const router = useRouter();
 
     return (
@@ -38,18 +39,14 @@ export default function About(){
             </div>
 
             <div className="flex flex-col items-center mt-12">
-                <TiltedCard
-                    imageSrc="/photo.svg"
-                    containerHeight="260px"
-                    containerWidth="260px"
-                    imageHeight="260px"
-                    imageWidth="260px"
-                    rotateAmplitude={12}
-                    scaleOnHover={1.2}
-                    showMobileWarning={false}
-                    showTooltip={false}
-                    displayOverlayContent={false}
-                />
+                <CometCard translateDepth={8}>
+                    <Image
+                        src="/photo.svg"
+                        alt="Profile pic"
+                        width={260}
+                        height={260}
+                    />
+                </CometCard>
 
                 <p className="mt-8 text-2xl sm:text-3xl md:text-4xl font-medium text-center">
                     Damanpreet Kaur
