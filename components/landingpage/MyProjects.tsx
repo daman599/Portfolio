@@ -2,12 +2,11 @@
 
 import Image from "next/image";
 import { Dot } from "lucide-react";
-import { useRouter } from "next/navigation";
 import { projectsData } from "@/lib/projectsData";
 import Reveal from "../ui/Reveal";
+import Link from "next/link";
 
 const Projects = () => {
-   const router = useRouter();
 
    return (
       <div className="mt-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-52">
@@ -29,11 +28,7 @@ const Projects = () => {
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <Reveal  key={index}>
                   <div className="flex flex-col overflow-hidden">
-                     <button
-                        onClick={() => {
-                           router.push(`/project/${id}`);
-                        }}
-
+                     <Link href={`/project/${id}`}
                         className="
                          group max-w-[95%] sm:max-w-[320px] md:max-w-[280px] lg:max-w-[349px] 
                          aspect-[16/9] relative cursor-pointer group w-full sm:w-[349px] h-[181px] 
@@ -61,7 +56,7 @@ const Projects = () => {
                          leading-[30px] transition-opacity duration-300 opacity-100 group-hover:opacity-0">
                            {project_type}
                         </div>
-                     </button>
+                     </Link>
 
                      <p className="mt-[23px] font-normal text-lg md:text-[22px] text-center md:text-left">
                         {project_name}
