@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className="w-full h-px bg-[#1C1C1C] mt-12 md:mt-20" />
 
-      <div className="flex flex-col md:flex-row justify-between w-full mt-6 max-w-6xl px-6 md:px-8 mx-auto gap-8 md:gap-12 lg:gap-20">
+      <div className="flex flex-col md:flex-row justify-between w-full mt-8 max-w-6xl px-6 md:px-8 mx-auto gap-8 md:gap-12 lg:gap-20">
         
         <div className="max-w-md">
           <Reveal>
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[1090px] h-px bg-[#1C1C1C] mt-6 mx-auto px-4" />
+      <div className="w-full max-w-[1090px] h-px bg-[#1C1C1C] mt-8 mx-auto px-4" />
 
       <p className="flex items-center justify-center mt-4 md:mt-6 lg:mt-9 mb-4 md:mb-6 lg:mb-9 text-[10px] md:text-xs lg:text-sm font-light text-[#CCCCCC]">
         © 2025 daman. All rights reserved.
