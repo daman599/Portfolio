@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft, Dot, ArrowRight } from "lucide-react";
 import { ProjectType } from "@/lib/projectsData";
 import Image from "next/image";
-import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 const Project = ({
@@ -52,16 +51,25 @@ const Project = ({
           />
 
           <div className="flex gap-6 mt-5">
-            <Link href={live_link}>
+            <a 
+            href={live_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
               <div className="bg-[#161515] px-5 py-1 rounded-full cursor-pointer text-sm">
                 Live
               </div>
-            </Link>
-            <Link href={code_link}>
+            </a>
+            
+            <a
+            target="_blank"
+            rel="noopener noreferrer" 
+            href={code_link}
+            >
               <div className="bg-[#161515] px-5 py-1 rounded-full cursor-pointer text-sm">
                 Code
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 const Footer = () => {
@@ -26,7 +25,13 @@ const Footer = () => {
             Contact
           </p>
           <div className="mt-4 text-[#999999] font-medium text-sm md:text-base leading-[25px]">
-            <p>damanpreetk117@gmail.com</p>
+            <a
+             href="https://mail.google.com/mail/?view=cm&fs=1&to=damanpreetk117@gmail.com&su=Hello"
+             target="_blank"
+             rel="noopener noreferrer"
+            >
+            damanpreetk117@gmail.com
+            </a>
             <p className="mt-1">Punjab, India</p>
           </div>
           </Reveal>
@@ -38,18 +43,22 @@ const Footer = () => {
             Connect
           </p>
           <div className="flex gap-4 md:gap-6 lg:gap-10 mt-3 md:mt-4 font-medium text-sm md:text-base text-[#999999]">
-            <Link
+            <a
               href="https://github.com/daman599"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer hover:text-[#FFFCFC]"
             >
               Github
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://x.com/daman76752"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer hover:text-[#FFFCFC]"
             >
               Twitter
-            </Link>
+            </a>
           </div>
           </Reveal>
         </div>
