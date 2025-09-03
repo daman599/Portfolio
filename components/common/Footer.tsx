@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Reveal from "../ui/Reveal";
 
 const Footer = () => {
   return (
@@ -6,8 +7,9 @@ const Footer = () => {
       <div className="w-full h-px bg-[#1C1C1C] mt-12 md:mt-20" />
 
       <div className="flex flex-col md:flex-row justify-between w-full mt-6 max-w-6xl px-6 md:px-8 mx-auto gap-8 md:gap-12 lg:gap-20">
-
+        
         <div className="max-w-md">
+          <Reveal>
           <p className="text-lg md:text-xl lg:text-2xl font-medium leading-snug">
             daman
           </p>
@@ -15,9 +17,11 @@ const Footer = () => {
             Blending design and technology to create functional, minimal, and
             impactful web apps.
           </p>
+          </Reveal>
         </div>
 
         <div>
+          <Reveal>
           <p className="font-normal text-sm md:text-base lg:text-xl leading-[25px]">
             Contact
           </p>
@@ -25,9 +29,11 @@ const Footer = () => {
             <p>damanpreetk117@gmail.com</p>
             <p className="mt-1">Punjab, India</p>
           </div>
+          </Reveal>
         </div>
 
         <div>
+          <Reveal>
           <p className="font-normal text-sm md:text-base lg:text-xl leading-[25px]">
             Connect
           </p>
@@ -45,6 +51,7 @@ const Footer = () => {
               Twitter
             </Link>
           </div>
+          </Reveal>
         </div>
       </div>
 

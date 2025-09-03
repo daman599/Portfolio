@@ -20,8 +20,6 @@ export default function Reveal({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration, delay, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }} 
-      // once: true => ek hi baar animate hoga
-      // amount: 0.2 => 20% element visible hote hi trigger hoga
     >
       {children}
     </motion.div>
