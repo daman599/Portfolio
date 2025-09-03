@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { CometCard } from '@/components/ui/CometCard';
 import { skills } from '@/lib/skills';
 import Image from "next/image"
+import Reveal from '@/components/ui/Reveal';
 
 export default function About() {
     const router = useRouter();
@@ -65,12 +66,13 @@ export default function About() {
 
                 <div className="mt-6 flex flex-wrap justify-center gap-3 max-w-lg">
                     {skills.map((skill, index) => (
+                        <Reveal key={index}>
                         <div
-                            key={index}
                             className="rounded-full bg-[#201F1F] border border-[#201F1F] hover:border-[#7E7E7E] px-4 py-1 cursor-default"
                         >
                             {skill}
                         </div>
+                        </Reveal>
                     ))}
                 </div>
             </div>

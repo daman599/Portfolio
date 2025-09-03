@@ -5,6 +5,7 @@ import { ArrowLeft, Dot, ArrowRight } from "lucide-react";
 import { ProjectType } from "@/lib/projectsData";
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../ui/Reveal";
 
 const Project = ({
   project_name,
@@ -30,7 +31,7 @@ const Project = ({
           Back to Projects
         </p>
       </button>
-
+       
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-7 mt-10">
         <div className="flex-1 text-center lg:text-left">
           <p className="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl">
@@ -106,13 +107,15 @@ const Project = ({
           <div className="w-full h-[1px] bg-[#1C1C1C] my-10"></div>
 
           <div>
+            <Reveal>
             <p className="font-medium text-lg md:text-xl lg:text-2xl leading-[25px]">
               Things I learned while building this project
             </p>
+            </Reveal>
 
             {things_learnt.map((point, index) => (
+              <Reveal key={index}>
               <div
-                key={index}
                 className={`flex gap-3 items-start ${index === 0 ? "mt-8" : "mt-4"}`}
               >
                 <ArrowRight color="#999999" />
@@ -120,6 +123,7 @@ const Project = ({
                   {point}
                 </p>
               </div>
+              </Reveal>
             ))}
           </div>
         </>

@@ -4,25 +4,31 @@ import Image from "next/image";
 import { Dot } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { projectsData } from "@/lib/projectsData";
+import Reveal from "../ui/Reveal";
 
 const Projects = () => {
    const router = useRouter();
 
    return (
       <div className="mt-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-52">
-         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-            My Projects
-         </p>
+         <Reveal>
+           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
+              My Projects
+           </p>
+         </Reveal>
 
+         <Reveal>
          <div className="mt-[23px] text-sm md:text-base font-medium text-[#999999] leading-[25px]">
             <p>A small step in my learning journey.</p>
             <p>Created with passion and attention to detail.</p>
          </div>
-
+         </Reveal>
+         
          <div className="mt-[51px] flex flex-col md:flex-row gap-10 md:gap-[42px]">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
-                  <div key={index} className="flex flex-col overflow-hidden">
+                  <Reveal  key={index}>
+                  <div className="flex flex-col overflow-hidden">
                      <button
                         onClick={() => {
                            router.push(`/project/${id}`);
@@ -66,6 +72,7 @@ const Projects = () => {
                         <p className="font-normal text-sm text-[#999999]">{month}</p>
                      </div>
                   </div>
+                  </Reveal>
                )
             )}
          </div>
