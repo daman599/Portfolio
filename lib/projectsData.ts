@@ -19,7 +19,7 @@ export const projectsData:ProjectType[] = [
       project_description: "A landing page created with cool animations.",
       project_type: "Landing page",
       project_pic: "/Finnova.png",
-      live_link: "https://finnova.money.vercel.app",
+      live_link: "https://finnova-money.vercel.app",
       code_link: "https://github.com/daman599/Finnova",
       frontend_techStack: ["Next.js","TailwindCss","Motion"],
       things_learnt: ["Animations using Motion"],
