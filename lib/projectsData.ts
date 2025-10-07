@@ -13,8 +13,20 @@ export interface ProjectType {
 }
 
 export const projectsData:ProjectType[] = [
-   {  
+  {  
       id: '1',
+      project_name: "Finnova",
+      project_description: "A landing page created with cool animations.",
+      project_type: "Landing page",
+      project_pic: "/Finnova.png",
+      live_link: "https://finnova.money.vercel.app",
+      code_link: "https://github.com/daman599/Finnova",
+      frontend_techStack: ["Next.js","TailwindCss","Motion"],
+      things_learnt: ["Animations using Motion"],
+      month: "September",
+   },
+   {  
+      id: '2',
       project_name: "ResumeMatch AI",
       project_description: "AI-powered resume analyzer that intelligently matches your resume with the most relevant and up-to-date job postings.",
       project_type: "Full-stack web app",
@@ -27,7 +39,7 @@ export const projectsData:ProjectType[] = [
       month: "July",
    },
    {
-      id: '2',
+      id: '3',
       project_name: "Funflix",
       project_description: "Funflix is a smart movie discovery platform that helps users instantly find out which streaming service a movie is available on.",
       project_type: "Full-stack web app",
