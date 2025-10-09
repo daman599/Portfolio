@@ -22,7 +22,7 @@ export const projectsData:ProjectType[] = [
       live_link: "https://finnova-money.vercel.app",
       code_link: "https://github.com/daman599/Finnova",
       frontend_techStack: ["Next.js","TailwindCss","Motion"],
-      things_learnt: ["Animations using Motion"],
+      things_learnt: ["Animations using Motion","Got inspiration of this design from Dribble."],
       month: "September",
    },
    {  
