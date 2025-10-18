@@ -23,7 +23,7 @@ const Projects = () => {
          </div>
          </Reveal>
          
-         <div className="mt-[51px] flex flex-col md:flex-row gap-10">
+         <div className="mt-[51px] flex flex-col md:flex-row gap-8">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <Reveal  key={index}>
