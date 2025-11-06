@@ -3,9 +3,9 @@ import Projects from "@/components/landingpage/MyProjects";
 
 export default function Home() {
   return (
-    <>
-      <Hero/>
-      <Projects/>
-    </>
+    <div className="overflow-hidden">
+      <Hero />
+      <Projects />
+    </div>
   );
 }
