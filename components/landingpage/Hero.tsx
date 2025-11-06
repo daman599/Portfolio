@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div className="mt-12 text-[40px] sm:text-[52px] md:text-[64px] flex flex-col items-center leading-[1.1] text-center">
           <div className="text-white font-medium">daman</div>
-          <div className="text-[#999999] font-medium">coolest</div>
+          <div className="text-[#999999] italic tracking-[-1px] sm:tracking-[-2px] md:tracking-[-3px]">personal</div>
           <div className="text-[#999999] font-medium">portfolio</div>
         </div>
 
