@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="w-full max-w-[320px] sm:max-w-[480px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] h-screen flex flex-col items-center justify-center mx-auto px-4 sm:px-6 md:px-8">
 
         <div className="absolute inset-0 -z-10 overflow-hidden">
-           <Vortex
+          <Vortex
             rangeY={800}
             particleCount={500}
             baseHue={120}
