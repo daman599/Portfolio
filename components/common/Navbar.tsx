@@ -4,17 +4,17 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#0a0a0a]/50">
-      <div className="flex justify-between items-center py-2 px-4 sm:px-6 md:px-10 lg:px-28 xl:px-48">
-        
+      <div className="flex justify-between items-center py-2 px-4 sm:px-6 md:px-10 lg:px-32 xl:px-48">
+
         <div className="text-lg md:text-2xl font-normal tracking-[3px] text-white hover:text-[#999999] select-none">
           daman
         </div>
 
         <Link
-            href="/about"
-            className="px-3 py-1 md:px-4 md:py-2 text-sm md:text-base text-white font-normal rounded-md transition-colors duration-200 hover:bg-[#262525]/45 hover:text-[#999999]"
+          href="/about"
+          className="px-3 py-1 md:px-4 md:py-2 text-sm md:text-base text-white font-normal rounded-md transition-colors duration-200 hover:bg-[#262525]/45 hover:text-[#999999]"
         >
-            About
+          About
         </Link>
       </div>
 
