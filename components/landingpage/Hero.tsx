@@ -13,20 +13,20 @@ const Hero = () => {
           />
         </div>
 
-        <div className="mt-12 text-[40px] md:text-[52px] flex flex-col items-center leading-[1.1] text-center">
+        <div className="mt-12 text-4xl md:text-5xl flex flex-col items-center leading-[1.1] text-center">
           <div className="text-white font-medium">daman</div>
           <div className="text-[#999999] italic tracking-[-1px] sm:tracking-[-2px] md:tracking-[-3px]">personal</div>
           <div className="text-[#999999] font-medium">portfolio</div>
         </div>
 
-        <div className="mt-6 md:mt-10 font-medium text-[#999999] leading-relaxed text-center">
+        <div className="mt-6 md:mt-9 font-medium text-[#999999] leading-relaxed text-center">
           <div className="text-base sm:text-lg md:text-xl">web developer</div>
           <div className="text-sm sm:text-lg md:text-xl mt-2 lg:mt-3">
             with ui/ux designing skills
           </div>
         </div>
 
-        <div className="mt-6 md:mt-9 flex items-center justify-center gap-1 md:gap-2 text-[#999999] text-xs sm:text-sm md:text-base font-light">
+        <div className="mt-6 md:mt-7 flex items-center justify-center gap-1 md:gap-2 text-[#999999] text-xs sm:text-sm md:text-base font-light">
           <span>Punjab,</span>
           <span>India</span>
         </div>
