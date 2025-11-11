@@ -23,7 +23,7 @@ const Projects = () => {
             </div>
          </Reveal>
 
-         <div className="mt-8 lg:mt-10 flex flex-col md:flex-row md:gap-5 lg:gap-8 overflow-x-auto scroll-smooth">
+         <div className="mt-8 lg:mt-10 flex flex-col md:flex-row md:gap-5 lg:gap-8 overflow-x-auto whitespace-nowrap scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <Reveal key={index}>
