@@ -23,11 +23,11 @@ const Projects = () => {
             </div>
          </Reveal>
 
-         <div className="mt-8 lg:mt-10 flex flex-col md:flex-row md:gap-5 lg:gap-9">
+         <div className="mt-8 lg:mt-10 flex flex-col md:flex-row md:gap-5 lg:gap-8 overflow-x-auto scroll-smooth">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <Reveal key={index}>
-                     <div className="flex flex-col overflow-hidden">
+                     <div className="flex flex-col overflow-hidden mb-2">
                         <Link href={`/project/${id}`}
                            className="
                          group max-w-[95%] sm:max-w-[320px] md:max-w-[280px] lg:max-w-[349px] 
