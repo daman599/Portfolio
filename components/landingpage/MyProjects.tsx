@@ -11,7 +11,7 @@ const Projects = () => {
    return (
       <div className="mt-10 px-4 sm:px-6 md:px-10 lg:px-28 xl:px-48 md:mb-2">
          <Reveal>
-            <p className="text-2xl xl:text-5xl font-medium">
+            <p className="text-2xl md:text-4xl xl:text-5xl font-medium">
                My Projects
             </p>
          </Reveal>
