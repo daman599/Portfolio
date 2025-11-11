@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="w-full h-px bg-[#1C1C1C]" />
+      <div className="w-full h-px bg-[#2727272b]" />
     </nav >
   );
 };
