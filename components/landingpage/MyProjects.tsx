@@ -17,7 +17,7 @@ const Projects = () => {
          </Reveal>
 
          <Reveal>
-            <div className="mt-2 xl:mt-6 text-sm lg:text-base font-medium text-[#999999] leading-[25px]">
+            <div className="mt-4 xl:mt-6 text-xs lg:text-base font-medium text-[#999999] leading-[25px]">
                <p>A small step in my learning journey.</p>
                <p>Created with passion and attention to detail.</p>
             </div>
