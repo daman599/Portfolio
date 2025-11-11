@@ -13,8 +13,8 @@ export default async function Page({
    if (!project) {
       return (
          <div className="flex flex-col items-center justify-center min-h-screen px-4">
-            <h1 className="text-red-500 text-xl md:text-2xl lg:text-3xl text-center">
-               Project not found !
+            <h1 className="text-red-500 text-xl md:text-2xl text-center">
+               Oops! Project not found.
             </h1>
          </div>
       );
