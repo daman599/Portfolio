@@ -9,21 +9,21 @@ import Link from "next/link";
 const Projects = () => {
 
    return (
-      <div className="mt-10 px-4 sm:px-6 md:px-12 lg:px-26 xl:px-48">
+      <div className="mt-10 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-48">
          <Reveal>
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
+            <p className="text-2xl sm:text-3xl xl:text-5xl font-medium">
                My Projects
             </p>
          </Reveal>
 
          <Reveal>
-            <div className="mt-[23px] text-sm md:text-base font-medium text-[#999999] leading-[25px]">
+            <div className="mt-4 xl:mt-6 text-sm md:text-base font-medium text-[#999999] leading-[25px]">
                <p>A small step in my learning journey.</p>
                <p>Created with passion and attention to detail.</p>
             </div>
          </Reveal>
 
-         <div className="mt-[51px] flex flex-col md:flex-row gap-9">
+         <div className="mt-8 lg:mt-10 flex flex-col md:flex-row md:gap-5 lg:gap-9">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <Reveal key={index}>
@@ -32,7 +32,7 @@ const Projects = () => {
                            className="
                          group max-w-[95%] sm:max-w-[320px] md:max-w-[280px] lg:max-w-[349px] 
                          aspect-[16/9] relative cursor-pointer group w-full sm:w-[349px] h-[181px] 
-                         overflow-hidden rounded-[16px] mx-auto md:mx-0"
+                         overflow-hidden rounded-xl mx-auto md:mx-0"
                         >
                            <Image
                               src="/Project_cover_pic.jpg"
@@ -58,13 +58,14 @@ const Projects = () => {
                            </div>
                         </Link>
 
-                        <p className="mt-[23px] font-normal text-lg md:text-[22px] text-center md:text-left">
+                        <span className="mt-[23px] font-normal text-lg text-center md:text-left">
                            {project_name}
-                        </p>
+                        </span>
+
                         <div className="flex mt-[10px] items-center justify-center md:justify-start ">
-                           <p className="font-normal text-sm text-[#999999]">2025</p>
+                           <p className="font-normal text-xs xl:text-sm text-[#999999]">2025</p>
                            <Dot className="text-[#999999]" />
-                           <p className="font-normal text-sm text-[#999999]">{month}</p>
+                           <p className="font-normal text-xs xl:text-sm text-[#999999]">{month}</p>
                         </div>
                      </div>
                   </Reveal>
