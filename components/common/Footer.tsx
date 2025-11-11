@@ -3,9 +3,9 @@ import Reveal from "../ui/Reveal";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-px bg-[#1C1C1C] mt-12 md:mt-20" />
+      <div className="w-full h-px bg-[#1C1C1C] mt-10 md:mt-24" />
 
-      <div className="flex flex-col md:flex-row justify-between w-full mt-8 max-w-6xl px-6 md:px-10 lg:px-16 xl:px-1 mx-auto gap-9 md:gap-12 lg:gap-20">
+      <div className="flex flex-col md:flex-row justify-between w-full mt-8 max-w-6xl px-4 sm:px-6 md:px-10 lg:px-28 xl:px-1 mx-auto gap-9 md:gap-12 lg:gap-20">
         <div className="max-w-md">
           <Reveal>
             <span className="text-lg md:text-xl font-medium leading-snug">

@@ -9,7 +9,7 @@ import Link from "next/link";
 const Projects = () => {
 
    return (
-      <div className="mt-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 md:mb-2">
+      <div className="mt-10 px-4 sm:px-6 md:px-10 lg:px-28 xl:px-48 md:mb-2">
          <Reveal>
             <p className="text-2xl xl:text-5xl font-medium">
                My Projects
@@ -17,13 +17,13 @@ const Projects = () => {
          </Reveal>
 
          <Reveal>
-            <div className="mt-2 xl:mt-6 text-sm xl:text-base font-medium text-[#999999] leading-[25px]">
+            <div className="mt-2 xl:mt-6 text-sm lg:text-base font-medium text-[#999999] leading-[25px]">
                <p>A small step in my learning journey.</p>
                <p>Created with passion and attention to detail.</p>
             </div>
          </Reveal>
 
-         <div className="mt-8 lg:mt-9 flex flex-col md:flex-row gap-6 md:gap-4 lg:gap-8 md:overflow-x-auto whitespace-nowrap scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+         <div className="mt-8 lg:mt-9 flex flex-col md:flex-row gap-6 lg:gap-8 md:overflow-x-auto whitespace-nowrap scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {projectsData.map(
                ({ id, project_name, project_type, project_pic, month }, index) => (
                   <Reveal key={index}>
