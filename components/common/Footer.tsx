@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full lg:max-w-[800px] xl:max-w-[1145px] h-px bg-[#1C1C1C] mt-8 mx-auto" />
+      <div className="w-full lg:max-w-[810px] xl:max-w-[1145px] h-px bg-[#1C1C1C] mt-8 mx-auto" />
 
       <p className="flex items-center justify-center my-4 md:my-6 lg:my-7 text-[10px] md:text-xs font-light text-[#CCCCCC]">
         © 2025 daman. All rights reserved.
