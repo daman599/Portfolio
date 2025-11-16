@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { ArrowLeft, Dot, ArrowRight } from "lucide-react";
 import { ProjectType } from "@/lib/projectsData";
 import Image from "next/image";
@@ -17,25 +17,22 @@ const Project = ({
   things_learnt,
 }: ProjectType) => {
 
-  const router = useRouter();
-
   return (
     <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
-      <button
-        onClick={() => router.push("/")}
+      <Link href={"/"}
         className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group px-3 py-2 cursor-pointer"
       >
         <ArrowLeft className="group-hover:text-white text-[#999999] w-3 h-3 sm:w-4 sm:h-4 transition-colors" />
         <p className="font-medium text-[#999999] group-hover:text-white text-[10px] sm:text-xs transition-colors">
           Back to Projects
         </p>
-      </button>
+      </Link>
 
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-5 mt-10">
         <div className="flex-1 text-center lg:text-left">
-          <p className="font-medium text-xl md:text-2xl">
+          <span className="font-medium text-xl md:text-2xl">
             {project_name}
-          </p>
+          </span>
           <p className="mt-4 lg:mt-6 text-[#999999] font-medium text-sm leading-[25px] max-w-md mx-auto lg:mx-0">
             {project_description}
           </p>

@@ -1,5 +1,5 @@
 import { projectsData } from "@/lib/projectsData";
-import Project from "@/components/common/Project";
+import ProjectDetails from "@/components/common/ProjectDetails";
 
 export default async function Page({
    params,
@@ -20,5 +20,5 @@ export default async function Page({
       );
    }
 
-   return <Project {...project} />
+   return <ProjectDetails {...project} />
 }

@@ -63,9 +63,9 @@ const Projects = () => {
                         </span>
 
                         <div className="flex mt-1 md:mt-2 items-center justify-center md:justify-start ">
-                           <p className="font-normal text-xs xl:text-sm text-[#999999]">2025</p>
+                           <span className="font-normal text-xs xl:text-sm text-[#999999]">2025</span>
                            <Dot className="text-[#999999]" />
-                           <p className="font-normal text-xs xl:text-sm text-[#999999]">{month}</p>
+                           <span className="font-normal text-xs xl:text-sm text-[#999999]">{month}</span>
                         </div>
                      </div>
                   </Reveal>
