@@ -1,28 +1,26 @@
 'use client'
 
 import { ArrowLeft } from 'lucide-react';
-import { useRouter } from "next/navigation";
+import Link from 'next/link';
 import { CometCard } from '@/components/ui/CometCard';
 import { skills } from '@/lib/skills';
 import Image from "next/image"
 import Reveal from '@/components/ui/Reveal';
 
 export default function About() {
-    const router = useRouter();
 
     return (
         <div className="px-4 sm:px-2 md:px-16 lg:px-20 mt-20">
 
             <div className="flex justify-between items-center px-1 md:px-28 xl:px-48">
-                <button
-                    onClick={() => router.push("/")}
+                <Link href={"/"}
                     className="flex gap-2 rounded-md hover:bg-[#262525]/45 items-center justify-center group px-3 py-2 cursor-pointer"
                 >
                     <ArrowLeft className="group-hover:text-white text-[#999999] w-3 h-3 sm:w-4 sm:h-4 transition-colors" />
-                    <p className="font-medium text-[#999999] group-hover:text-white text-[10px] sm:text-xs transition-colors">
+                    <span className="font-medium text-[#999999] group-hover:text-white text-[10px] sm:text-xs transition-colors">
                         Back to Projects
-                    </p>
-                </button>
+                    </span>
+                </Link>
 
                 <a
                     href="https://drive.google.com/file/d/1PoFiY9zHdEfwjfY1W7cM7e1et_FtY_xW/view?usp=sharing"
@@ -45,9 +43,9 @@ export default function About() {
                     />
                 </CometCard>
 
-                <p className="mt-8 text-2xl md:text-3xl font-medium text-center">
+                <span className="mt-8 text-2xl md:text-3xl font-medium text-center">
                     Damanpreet Kaur
-                </p>
+                </span>
 
                 <div className="mt-6 max-w-xl text-[#999999] font-medium text-sm xl:text-base leading-6 text-center">
                     <p>
@@ -62,7 +60,7 @@ export default function About() {
             </div>
 
             <div className="mt-12 flex flex-col items-center">
-                <p className="font-medium text-base md:text-lg xl:text-xl">Tech-stack</p>
+                <span className="font-medium text-base md:text-lg xl:text-xl">Tech-stack</span>
 
                 <div className="mt-6 flex flex-wrap justify-center gap-3 max-w-lg">
                     {skills.map((skill, index) => (
