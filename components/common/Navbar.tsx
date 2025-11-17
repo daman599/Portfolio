@@ -9,12 +9,21 @@ const Navbar = () => {
           daman
         </span>
 
-        <Link
-          href="/about"
-          className="px-3 py-2 text-sm text-white font-normal rounded-md transition-colors duration-300 hover:bg-[#262525]/45 hover:text-[#999999]"
-        >
-          About
-        </Link>
+        <div className="flex items-center justify-center md:gap-3 gap-0.5">
+          <Link
+            href="/work"
+            className="p-2 md:px-3 md:py-2 text-xs md:text-sm text-white font-normal rounded-md transition-colors duration-300 hover:bg-[#262525]/45 hover:text-[#999999]"
+          >
+            Work
+          </Link>
+
+          <Link
+            href="/about"
+            className="p-2 md:px-3 md:py-2 text-xs md:text-sm text-white font-normal rounded-md transition-colors duration-300 hover:bg-[#262525]/45 hover:text-[#999999]"
+          >
+            About
+          </Link>
+        </div>
       </div>
 
       <div className="w-full h-px bg-[#2727272b]" />
