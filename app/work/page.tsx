@@ -13,6 +13,7 @@ const videosPath: videosPathType[] = [
     { path: "createBtn.mp4" },
     { path: "Expandcard.mp4" },
     { path: "expensesCard.mp4" },
+    { path: "clickAnimation.mp4" },
 ];
 
 export default function Work() {
@@ -21,9 +22,9 @@ export default function Work() {
             <p className="text-base md:text-2xl font-medium text-[#9a9a9a]">
                 This is what I mean when I say, &quot;<span className="text-gray-100">I love creating UI components</span>&quot;
             </p>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 mt-7">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 mt-10">
                 {videosPath.map((video, i) => (
-                    <div key={i} className="aspect-video rounded-xl">
+                    <div key={i} className="aspect-video overflow-hidden rounded-xl">
                         <video
                             src={`/uiComp-videos/${video.path}`}
                             autoPlay
