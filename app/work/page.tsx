@@ -50,22 +50,24 @@ export default function Work() {
             <div className="w-full h-[1px] bg-[#1C1C1C] my-10"></div>
 
             <div className="flex flex-col items-start justify-center gap-5">
-                <span className="text-xl text-[#7c7c7c] underline">Open Source Contributions:-</span>
+                <span className="text-base md:text-lg :text-xl text-[#7c7c7c] underline">Open Source Contributions:-</span>
 
                 {Contributions.map((contri, i) => (
-                    <div key={i} className="flex items-center justify-between w-full">
-                        <div className="flex items-center justify-center gap-2 ">
-                            <div className="px-3 py-2 gap-2 flex items-center justify-center bg-[#542081] rounded-full">
+                    <div key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
+
+                        <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-2 ">
+                            <div className="px-2 py-1 md:px-3 md:py-2 gap-2 flex items-center justify-center bg-[#542081] rounded-full">
                                 <GitMerge size={18} />
-                                <span className="text-base">Merged</span>
+                                <span className="text-xs md:text-sm">Merged</span>
                             </div>
-                            <span className="text-xl text-[#868686]">
+
+                            <span className="text-sm md:text-base lg:text-xl text-[#868686]">
                                 {contri.contribution}
                             </span>
                         </div>
 
-                        <a href="https://github.com/Hussain-hamim/DevSync">
-                            <span className="text-lg text-[#40c463]">DevSync</span>
+                        <a href="https://github.com/Hussain-hamim/DevSync" target="_blank" rel="noopener noreferrer">
+                            <span className="text-sm md:text-base text-[#40c463]">DevSync</span>
                         </a>
                     </div>
                 ))}
