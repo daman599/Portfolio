@@ -86,20 +86,26 @@ export default function Work() {
 
             <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-14"></div>
 
-            <div className="flex flex-col items-start justify-center w-full gap-5 overflow-hidden">
+            <div className="flex flex-col items-start justify-center w-full gap-5">
                 <div className="flex items-center justify-center gap-2">
                     <span className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium">Checkout my recent Hero section Designs:-</span>
                 </div>
 
-                <div className="flex items-center justify-center gap-8 animate-infinite-scroll">
-                    {[...designPicsPath, ...designPicsPath].map((design, i) => (
-                        <Image key={i} src={`/designs/${design.path}`}
-                            width={300}
-                            height={300}
-                            alt={"design"}
-                        />
-                    ))}
+                <div className="overflow-hidden w-full">
+                    <div className="flex items-center animate-infinite-scroll">
+                        {[...designPicsPath, ...designPicsPath].map((design, i) => (
+                            <div key={i} className="px-5">
+                                <Image
+                                    src={`/designs/${design.path}`}
+                                    width={300}
+                                    height={300}
+                                    alt="design"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
+
             </div>
         </div >
     );
