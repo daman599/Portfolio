@@ -1,4 +1,4 @@
-import { GitMerge, Component } from "lucide-react";
+import { GitMerge } from "lucide-react";
 import Image from "next/image";
 
 interface pathType {
@@ -62,13 +62,12 @@ export default function Work() {
 
             <div className="flex flex-col items-start justify-center gap-5 overflow-hidden">
                 <div className="flex items-center justify-center gap-2">
-                    <Component />
-                    <span className="text-xl bg-gradient-to-b from-blue-500 to-purple-200 bg-clip-text text-transparent">Checkout my recent Hero section Designs.</span>
+                    <span className="text-xl text-[#6f6f6f] font-medium">Checkout my recent Hero section Designs.</span>
                 </div>
 
-                <div className="flex items-center justify-center gap-8">
-                    {designPicsPath.map((design) => (
-                        <Image src={`/designs/${design.path}`}
+                <div className="flex items-center justify-center gap-8 animate-slide w-full">
+                    {designPicsPath.map((design, i) => (
+                        <Image key={i} src={`/designs/${design.path}`}
                             width={300}
                             height={300}
                             alt={"design"}

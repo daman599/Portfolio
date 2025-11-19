@@ -21,3 +21,21 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
+
+.animate-slide:hover {
+  animation-play-state: paused;
+}
