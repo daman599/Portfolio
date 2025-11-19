@@ -1,10 +1,11 @@
-import { GitMerge } from "lucide-react";
+import { GitMerge, Component } from "lucide-react";
+import Image from "next/image";
 
-type videosPathType = {
+interface pathType {
     path: string,
 }
 
-const videosPath: videosPathType[] = [
+const videosPath: pathType[] = [
     { path: "navbar.mp4" },
     { path: "gradButton.mp4" },
     { path: "ContriCard.mp4" },
@@ -18,13 +19,23 @@ const videosPath: videosPathType[] = [
     { path: "clickAnimation.mp4" },
 ];
 
-type contributionsTye = {
+interface contributionsTye {
     contribution: string,
 }
 
 const Contributions: contributionsTye[] = [
     { contribution: "fix(ui): resolve overflow bug in filter div with overflow-hidden" },
     { contribution: "layout improvements" },
+];
+
+const designPicsPath: pathType[] = [
+    { path: "hero1.png" },
+    { path: "hero2.png" },
+    { path: "hero3.png" },
+    { path: "hero4.png" },
+    { path: "hero5.png" },
+    { path: "hero6.png" },
+    { path: "hero7.png" },
 ];
 
 export default function Work() {
@@ -49,6 +60,25 @@ export default function Work() {
 
             <div className="w-full h-[1px] bg-[#1C1C1C] my-10"></div>
 
+            <div className="flex flex-col items-start justify-center gap-5 overflow-hidden">
+                <div className="flex items-center justify-center gap-2">
+                    <Component />
+                    <span className="text-xl bg-gradient-to-b from-blue-500 to-purple-200 bg-clip-text text-transparent">Checkout my recent Hero section Designs.</span>
+                </div>
+
+                <div className="flex items-center justify-center gap-8">
+                    {designPicsPath.map((design) => (
+                        <Image src={`/designs/${design.path}`}
+                            width={300}
+                            height={300}
+                            alt={"design"}
+                        />
+                    ))}
+                </div>
+            </div>
+
+            <div className="w-full h-[1px] bg-[#1C1C1C] my-10"></div>
+
             <div className="flex flex-col items-start justify-center gap-5">
                 <span className="text-base md:text-lg :text-xl text-[#7c7c7c] underline">Open Source Contributions:-</span>
 
@@ -56,12 +86,12 @@ export default function Work() {
                     <div key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
 
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-2 ">
-                            <div className="px-2 py-1 md:px-3 md:py-2 gap-2 flex items-center justify-center bg-[#542081] rounded-full">
+                            <div className="px-2 py-1 md:px-3 md:py-1.5 gap-2 flex items-center justify-center bg-[#542081] rounded-full">
                                 <GitMerge size={18} />
                                 <span className="text-xs md:text-sm">Merged</span>
                             </div>
 
-                            <span className="text-sm md:text-base lg:text-xl text-[#868686]">
+                            <span className="text-sm md:text-base lg:text-lg text-[#868686]">
                                 {contri.contribution}
                             </span>
                         </div>
