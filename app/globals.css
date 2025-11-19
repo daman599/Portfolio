@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes slide {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -32,10 +32,10 @@ html {
   }
 }
 
-.animate-slide {
-  animation: slide 10s linear infinite;
+.animate-infinite-scroll {
+  animation: scroll 10s linear infinite;
 }
 
-.animate-slide:hover {
+.animate-infinite-scroll:hover {
   animation-play-state: paused;
 }

@@ -19,11 +19,11 @@ const videosPath: pathType[] = [
     { path: "clickAnimation.mp4" },
 ];
 
-interface contributionsTye {
+interface contributionsType {
     contribution: string,
 }
 
-const Contributions: contributionsTye[] = [
+const Contributions: contributionsType[] = [
     { contribution: "fix(ui): resolve overflow bug in filter div with overflow-hidden" },
     { contribution: "layout improvements" },
 ];
@@ -44,7 +44,7 @@ export default function Work() {
             <p className="text-xl font-medium text-[#9a9a9a]">
                 This is what I mean when I say, &quot; <span className="text-gray-100">I love creating UI components</span> &quot;
             </p>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 rounded-lg md:rounded-xl mt-5 md:mt-10 bg-[#24242485] p-3 md:p-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 rounded-lg md:rounded-xl mt-5 md:mt-8 bg-[#24242485] p-3 md:p-5">
                 {videosPath.map((video, i) => (
                     <div key={i} className="aspect-video overflow-hidden rounded-lg md:rounded-xl">
                         <video
@@ -58,28 +58,10 @@ export default function Work() {
                 ))}
             </div>
 
-            <div className="w-full h-[1px] bg-[#1C1C1C] my-10"></div>
-
-            <div className="flex flex-col items-start justify-center gap-5 overflow-hidden">
-                <div className="flex items-center justify-center gap-2">
-                    <span className="text-xl text-[#6f6f6f] font-medium">Checkout my recent Hero section Designs.</span>
-                </div>
-
-                <div className="flex items-center justify-center gap-8 animate-slide w-full">
-                    {designPicsPath.map((design, i) => (
-                        <Image key={i} src={`/designs/${design.path}`}
-                            width={300}
-                            height={300}
-                            alt={"design"}
-                        />
-                    ))}
-                </div>
-            </div>
-
-            <div className="w-full h-[1px] bg-[#1C1C1C] my-10"></div>
+            <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-10"></div>
 
             <div className="flex flex-col items-start justify-center gap-5">
-                <span className="text-base md:text-lg :text-xl text-[#7c7c7c] underline">Open Source Contributions:-</span>
+                <span className="text-base md:text-lg lg:text-xl text-[#7c7c7c]">Open Source Contributions:-</span>
 
                 {Contributions.map((contri, i) => (
                     <div key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
@@ -100,6 +82,24 @@ export default function Work() {
                         </a>
                     </div>
                 ))}
+            </div>
+
+            <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-14"></div>
+
+            <div className="flex flex-col items-start justify-center w-full gap-5 overflow-hidden">
+                <div className="flex items-center justify-center gap-2">
+                    <span className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium">Checkout my recent Hero section Designs:-</span>
+                </div>
+
+                <div className="flex items-center justify-center gap-8 animate-infinite-scroll">
+                    {[...designPicsPath, ...designPicsPath].map((design, i) => (
+                        <Image key={i} src={`/designs/${design.path}`}
+                            width={300}
+                            height={300}
+                            alt={"design"}
+                        />
+                    ))}
+                </div>
             </div>
         </div >
     );
