@@ -5,6 +5,10 @@ interface pathType {
     path: string,
 }
 
+interface contributionsType {
+    contribution: string,
+}
+
 const videosPath: pathType[] = [
     { path: "navbar.mp4" },
     { path: "gradButton.mp4" },
@@ -18,10 +22,6 @@ const videosPath: pathType[] = [
     { path: "expensesCard.mp4" },
     { path: "clickAnimation.mp4" },
 ];
-
-interface contributionsType {
-    contribution: string,
-}
 
 const Contributions: contributionsType[] = [
     { contribution: "fix(ui): resolve overflow bug in filter div with overflow-hidden" },
@@ -41,7 +41,7 @@ const designPicsPath: pathType[] = [
 export default function Work() {
     return (
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
-            <p className="text-xl font-medium text-[#9a9a9a]">
+            <p className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]">
                 This is what I mean when I say, &quot; <span className="text-gray-100">I love creating UI components</span> &quot;
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 rounded-lg md:rounded-xl mt-5 md:mt-8 bg-[#24242485] p-3 md:p-5">
