@@ -92,9 +92,9 @@ export default function Work() {
                 </div>
 
                 <div className="relative overflow-hidden w-full">
-                    <div className="pointer-events-none absolute top-0 left-0 bottom-0 h-full w-20 bg-gradient-to-r from-[#000000] to-transparent z-20"></div>
+                    <div className="pointer-events-none absolute top-0 left-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-r from-[#000000] to-transparent z-20"></div>
 
-                    <div className="pointer-events-none absolute top-0 right-0 bottom-0 h-full w-20 bg-gradient-to-l from-[#000000] to-transparent z-20"></div>
+                    <div className="pointer-events-none absolute top-0 right-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-l from-[#000000] to-transparent z-20"></div>
 
                     <div className="flex items-center animate-infinite-scroll">
                         {[...designPicsPath, ...designPicsPath].map((design, i) => (
