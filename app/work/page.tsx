@@ -2,7 +2,7 @@
 
 import { GitMerge } from "lucide-react";
 import Image from "next/image";
-import { motion, useAnimate } from "motion/react";
+import { motion, useAnimate, stagger } from "motion/react";
 import { useEffect } from "react";
 
 interface pathType {
@@ -43,16 +43,18 @@ const designPicsPath: pathType[] = [
 ];
 
 export default function Work() {
+    const text = "This is what I mean when I say, I love creating UI components.";
     const [scope, animate] = useAnimate();
 
     function startAnimating() {
-        animate(scope.current, {
+        animate("span", {
             opacity: 1,
             filter: "blur(0px)",
             y: 0,
         }, {
             duration: 1,
-            ease: "easeIn",
+            ease: "easeInOut",
+            delay: stagger(0.2),
         });
     }
 
@@ -62,17 +64,20 @@ export default function Work() {
 
     return (
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
-            <motion.div ref={scope}
-                style={{
-                    opacity: 0,
-                    y: 10,
-                    filter: "blur(10px)",
-                }}
-            >
-                <span className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]">
-                    This is what I mean when I say, I love creating UI components.
-                </span>
-            </motion.div>
+            <div ref={scope}>
+                {text.split(" ").map((word, i) => (
+                    <motion.span key={i}
+                        style={{
+                            opacity: 0,
+                            y: 10,
+                            filter: "blur(10px)",
+                        }}
+                        className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]"
+                    >
+                        {word}&nbsp;
+                    </motion.span>
+                ))}
+            </div>
 
             <motion.div
                 initial={{ opacity: 0 }}
