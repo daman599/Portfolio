@@ -1,5 +1,8 @@
+"use client"
+
 import { GitMerge } from "lucide-react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 interface pathType {
     path: string,
@@ -67,10 +70,13 @@ export default function Work() {
                     <div key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
 
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-2 ">
-                            <div className="px-2 py-1 md:px-3 md:py-1.5 gap-2 flex items-center justify-center bg-[#542081] rounded-full">
+                            <motion.div
+                                animate={{ boxShadow: ["0 0 10px #9e63d1", "0 0 5px #9e63d1", "0 0 10px #9e63d1"] }}
+                                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                className="px-2 py-1 md:px-3 md:py-1.5 gap-2 flex items-center justify-center bg-[#542081] rounded-full">
                                 <GitMerge size={18} />
                                 <span className="text-xs md:text-sm">Merged</span>
-                            </div>
+                            </motion.div>
 
                             <span className="text-sm md:text-base lg:text-lg text-[#868686]">
                                 {contri.contribution}
