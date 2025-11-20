@@ -44,10 +44,21 @@ const designPicsPath: pathType[] = [
 export default function Work() {
     return (
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
-            <p className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]">
+            <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeIn" }}
+                viewport={{ once: true }}
+                className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]">
                 This is what I mean when I say, &quot; <span className="text-gray-100">I love creating UI components</span> &quot;
-            </p>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 rounded-lg md:rounded-xl mt-5 md:mt-8 bg-[#24242485] p-3 md:p-5">
+            </motion.p>
+
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeIn" }}
+                viewport={{ once: true }}
+                className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 rounded-lg md:rounded-xl mt-5 md:mt-8 bg-[#24242485] p-3 md:p-5">
                 {videosPath.map((video, i) => (
                     <div key={i} className="aspect-video overflow-hidden rounded-lg md:rounded-xl">
                         <video
@@ -59,15 +70,25 @@ export default function Work() {
                         />
                     </div>
                 ))}
-            </div>
+            </motion.div>
 
             <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-10"></div>
 
             <div className="flex flex-col items-start justify-center gap-5">
-                <span className="text-base md:text-lg lg:text-xl text-[#7c7c7c]">Open Source Contributions:-</span>
+                <motion.span
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeIn" }}
+                    viewport={{ once: true }}
+                    className="text-base md:text-lg lg:text-xl text-[#7c7c7c]">Open Source Contributions:-</motion.span>
 
                 {Contributions.map((contri, i) => (
-                    <div key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 2, ease: "easeIn" }}
+                        viewport={{ once: true }}
+                        key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
 
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-2 ">
                             <motion.div
@@ -86,23 +107,31 @@ export default function Work() {
                         <a href="https://github.com/Hussain-hamim/DevSync" target="_blank" rel="noopener noreferrer">
                             <span className="text-sm md:text-base text-[#40c463]">DevSync</span>
                         </a>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
-            <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-14"></div>
+            <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-10"></div>
 
             <div className="flex flex-col items-start justify-center w-full gap-5">
-                <div className="flex items-center justify-center gap-2">
-                    <span className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium">Checkout my recent Hero section Designs:-</span>
-                </div>
+                <motion.span
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeIn" }}
+                    viewport={{ once: true }}
+                    className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium ">Checkout my recent Hero section Designs:-</motion.span>
 
-                <div className="relative overflow-hidden w-full">
+                <div className="relative overflow-hidden w-full mt-4 md:mt-8">
                     <div className="pointer-events-none absolute top-0 left-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-r from-[#000000] to-transparent z-20"></div>
 
                     <div className="pointer-events-none absolute top-0 right-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-l from-[#000000] to-transparent z-20"></div>
 
-                    <div className="flex items-center animate-infinite-scroll">
+                    <motion.div
+                        initial={{ opacity: 0, y: 60 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 3, ease: "easeIn" }}
+                        viewport={{ once: true }}
+                        className="flex items-center animate-infinite-scroll">
                         {[...designPicsPath, ...designPicsPath].map((design, i) => (
                             <div key={i} className="px-5">
                                 <Image
@@ -113,7 +142,7 @@ export default function Work() {
                                 />
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
