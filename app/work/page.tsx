@@ -2,7 +2,8 @@
 
 import { GitMerge } from "lucide-react";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, useAnimate } from "motion/react";
+import { useEffect } from "react";
 
 interface pathType {
     path: string,
@@ -42,16 +43,36 @@ const designPicsPath: pathType[] = [
 ];
 
 export default function Work() {
+    const [scope, animate] = useAnimate();
+
+    function startAnimating() {
+        animate(scope.current, {
+            opacity: 1,
+            filter: "blur(0px)",
+            y: 0,
+        }, {
+            duration: 1,
+            ease: "easeIn",
+        });
+    }
+
+    useEffect(() => {
+        startAnimating();
+    }, []);
+
     return (
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
-            <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2, ease: "easeIn" }}
-                viewport={{ once: true }}
-                className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]">
-                This is what I mean when I say, &quot; <span className="text-gray-100">I love creating UI components</span> &quot;
-            </motion.p>
+            <motion.div ref={scope}
+                style={{
+                    opacity: 0,
+                    y: 10,
+                    filter: "blur(10px)",
+                }}
+            >
+                <span className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]">
+                    This is what I mean when I say, I love creating UI components.
+                </span>
+            </motion.div>
 
             <motion.div
                 initial={{ opacity: 0 }}
