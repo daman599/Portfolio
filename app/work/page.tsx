@@ -17,11 +17,10 @@ const parentVariant: Variants = {
 
 
 const childVariant: Variants = {
-    hidden: { opacity: 0, y: 80, filter: "blur(2px)" },
+    hidden: { opacity: 0, y: 100 },
     show: {
         opacity: 1,
         y: 0,
-        filter: "blur(0px)",
         transition: {
             duration: 1.2,
             ease: "easeIn"
@@ -166,7 +165,10 @@ export default function Work() {
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 1, ease: "easeIn" }}
                     viewport={{ once: true }}
-                    className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium ">Checkout my recent Hero section Designs:-</motion.span>
+                    className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium"
+                >
+                    Checkout my recent Hero section Designs:-
+                </motion.span>
 
                 <div className="relative overflow-hidden w-full mt-4 md:mt-5">
                     <div className="pointer-events-none absolute top-0 left-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-r from-[#000000] to-transparent z-20"></div>
@@ -174,8 +176,8 @@ export default function Work() {
                     <div className="pointer-events-none absolute top-0 right-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-l from-[#000000] to-transparent z-20"></div>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 40, filter: "blur(2px)" }}
-                        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 3, ease: "easeIn" }}
                         viewport={{ once: true }}
                         className="flex items-center animate-infinite-scroll">
