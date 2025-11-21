@@ -2,8 +2,33 @@
 
 import { GitMerge } from "lucide-react";
 import Image from "next/image";
-import { motion, useAnimate, stagger } from "motion/react";
+import { motion, useAnimate, stagger, Variants } from "motion/react";
 import { useEffect } from "react";
+
+const parentVariant: Variants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            delayChildren: stagger(0.25, { ease: "easeIn" })
+        }
+    },
+}
+
+
+const childVariant: Variants = {
+    hidden: { opacity: 0, y: 80, filter: "blur(2px)" },
+    show: {
+        opacity: 1,
+        y: 0,
+        filter: "blur(0px)",
+        transition: {
+            duration: 1.2,
+            ease: "easeIn"
+        }
+    },
+}
+
 
 interface pathType {
     path: string,
@@ -79,14 +104,14 @@ export default function Work() {
                 ))}
             </div>
 
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2, ease: "easeIn" }}
+            <motion.div variants={parentVariant}
+                initial={"hidden"}
+                animate={"show"}
+                transition={{ duration: 1, ease: "easeIn" }}
                 viewport={{ once: true }}
                 className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 rounded-lg md:rounded-xl mt-5 md:mt-8 bg-[#24242485] p-3 md:p-5">
                 {videosPath.map((video, i) => (
-                    <div key={i} className="aspect-video overflow-hidden rounded-lg md:rounded-xl">
+                    <motion.div variants={childVariant} key={i} className="aspect-video overflow-hidden rounded-lg md:rounded-xl">
                         <video
                             src={`/uiComp-videos/${video.path}`}
                             autoPlay
@@ -94,26 +119,22 @@ export default function Work() {
                             muted
                             className="w-full h-full object-cover"
                         />
-                    </div>
+                    </motion.div >
                 ))}
             </motion.div>
 
             <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-10"></div>
 
-            <div className="flex flex-col items-start justify-center gap-5">
-                <motion.span
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: "easeIn" }}
-                    viewport={{ once: true }}
-                    className="text-base md:text-lg lg:text-xl text-[#7c7c7c]">Open Source Contributions:-</motion.span>
+            <motion.div
+                initial={{ opacity: 0, y: 10, filter: "blur(2px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                viewport={{ once: true }}
+                className="flex flex-col items-start justify-center gap-5">
+                <span className="text-base md:text-lg lg:text-xl text-[#7c7c7c]">Open Source Contributions:-</span>
 
                 {Contributions.map((contri, i) => (
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 2, ease: "easeIn" }}
-                        viewport={{ once: true }}
+                    <div
                         key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-1">
 
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-2 ">
@@ -133,28 +154,28 @@ export default function Work() {
                         <a href="https://github.com/Hussain-hamim/DevSync" target="_blank" rel="noopener noreferrer">
                             <span className="text-sm md:text-base text-[#40c463]">DevSync</span>
                         </a>
-                    </motion.div>
+                    </div>
                 ))}
-            </div>
+            </motion.div>
 
             <div className="w-full h-[1px] bg-[#1C1C1C] my-8 md:my-10"></div>
 
             <div className="flex flex-col items-start justify-center w-full gap-5">
                 <motion.span
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 10, filter: "blur(2px)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 1, ease: "easeIn" }}
                     viewport={{ once: true }}
                     className="text-base md:text-lg lg:text-xl text-[#6f6f6f] font-medium ">Checkout my recent Hero section Designs:-</motion.span>
 
-                <div className="relative overflow-hidden w-full mt-4 md:mt-8">
+                <div className="relative overflow-hidden w-full mt-4 md:mt-5">
                     <div className="pointer-events-none absolute top-0 left-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-r from-[#000000] to-transparent z-20"></div>
 
                     <div className="pointer-events-none absolute top-0 right-0 bottom-0 h-full w-6 md:w-20 bg-gradient-to-l from-[#000000] to-transparent z-20"></div>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 60 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 40, filter: "blur(2px)" }}
+                        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 3, ease: "easeIn" }}
                         viewport={{ once: true }}
                         className="flex items-center animate-infinite-scroll">
