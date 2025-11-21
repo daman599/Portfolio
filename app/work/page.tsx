@@ -64,7 +64,7 @@ export default function Work() {
 
     return (
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-52 mt-14 md:mt-20">
-            <div ref={scope}>
+            <div ref={scope} className="w-full max-w-4xl">
                 {text.split(" ").map((word, i) => (
                     <motion.span key={i}
                         style={{
@@ -72,7 +72,7 @@ export default function Work() {
                             y: 10,
                             filter: "blur(10px)",
                         }}
-                        className="text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]"
+                        className="inline-block text-base md:text-lg lg:text-xl font-medium text-[#9a9a9a]"
                     >
                         {word}&nbsp;
                     </motion.span>
